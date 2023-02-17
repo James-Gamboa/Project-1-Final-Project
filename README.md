@@ -6,6 +6,6 @@ James Guevara Gamboa
 
 Juan Carlos Sacasa Castillo
 
-Heylin Loaiza
+Heylin Loaiza Salmerón
 
-Jason Aguilar
+Jason Aguilar Núñez
