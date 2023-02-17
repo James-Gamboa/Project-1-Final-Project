@@ -1,1 +1,11 @@
-# Proyecto-1-Proyectofinal
+# Proyecto 1  Proyecto Final
+
+MEMBERS
+
+James Guevara Gamboa
+
+Juan Carlos Sacasa Castillo
+
+Heylin Loaiza
+
+Jason Aguilar
