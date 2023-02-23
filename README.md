@@ -1,4 +1,4 @@
-# Proyecto 1  Proyecto Final
+# Project 1 Final Project
 
 MEMBERS
 
