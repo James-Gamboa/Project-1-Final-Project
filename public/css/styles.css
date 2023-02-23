@@ -1,0 +1,334 @@
+body {
+  font-family: "Roboto", sans-serif; }
+
+.container__info__hotel {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.container__img img {
+  width: 426px;
+  height: 285px;
+  margin: 7% 0%; }
+
+.container__flex {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 5% 0% 5% 0%; }
+
+.container__flex--img {
+  width: 80%;
+  max-width: 968px;
+  object-fit: cover;
+  margin: 0 auto; }
+
+.container__flex a {
+  text-decoration: none;
+  color: #000; }
+
+.subtitle__main {
+  font-size: 26px; }
+
+.price__hotel {
+  font-size: 28px;
+  margin: 4%; }
+
+@media (min-width: 800px) {
+  .container__flex {
+    flex-direction: row;
+    margin: 3% 9% 5% 0%; }
+  .container__flex--img {
+    width: 50% !important; }
+  .subtitle__description {
+    font-size: 26px !important; }
+  .container__list--flex {
+    flex-direction: initial !important;
+    font-size: 22px !important;
+    margin: 0% 0% 3% !important; }
+  .text__description {
+    margin: -1% 0% 4% 6% !important; }
+  .container__info__hotel--right img {
+    float: right; }
+  .container__info__hotel--left img {
+    float: left; }
+  .container__info__hotel--left, .container__info__hotel--right {
+    margin: 3% 0% 0% 1% !important;
+    width: 72% !important; }
+  .container__info__hotel--left, .container__info__hotel--right p {
+    font-size: 20px; } }
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px; }
+
+p {
+  font-size: 14px; }
+
+.homeTitle {
+  text-align: center; }
+
+.homeImgCont {
+  width: 100%; }
+
+.homeImgCont__img {
+  width: 100%;
+  height: 100%; }
+
+.imgCont--heigth {
+  height: 205px; }
+
+@media (min-width: 720px) {
+  .main-conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 60%;
+    margin: 0px auto 0px; } }
+
+.form-content {
+  width: 100%;
+  max-width: 100%;
+  border: #326259 2px solid;
+  border-radius: 10px; }
+  .form-content h1 {
+    margin: 8px 0;
+    text-align: center; }
+  .form-content p {
+    margin: 8px 0; }
+
+.form-content__text {
+  width: 60%;
+  margin: 0 auto; }
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  margin: 10px 0; }
+
+.form__input {
+  width: 60%;
+  height: 24px;
+  border-radius: 6px; }
+
+.form__input--comment {
+  height: 30px; }
+
+.details-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto; }
+
+.details-container__image img {
+  width: 100%;
+  height: auto; }
+
+@media (min-width: 1024px) {
+  .form-content {
+    width: 1110px;
+    max-width: 100%;
+    margin: 0 auto; }
+  .form__input {
+    width: 60%;
+    height: 30px; }
+  .form__buttons {
+    width: 20%;
+    height: 40px; } }
+
+@media (min-width: 768px) {
+  .form-content__text {
+    width: 60%;
+    margin: 0 auto; }
+  .form {
+    margin: 30px 0px; }
+  .form__input {
+    width: 60%;
+    height: 30px; }
+  .form__input--comment {
+    height: 50px; }
+  .form__buttons {
+    width: 20%;
+    height: 40px; } }
+
+.imageCont {
+  width: 60%;
+  margin: 20px auto 30px; }
+
+.imageCont__img {
+  width: 100%;
+  height: 100%; }
+
+.buttomCase {
+  width: 90%;
+  margin: 0 auto 30px;
+  padding: 0% 0% 0% 14%; }
+
+.popUp-buttom {
+  padding: 5px;
+  width: 40%;
+  border-radius: 10px;
+  background-color: #d3d3d3;
+  font-size: 12px;
+  border: #d3d3d3; }
+
+.popUp-buttom:hover {
+  border: #326259;
+  background-color: #326259;
+  color: #ffff; }
+
+.text {
+  width: 80%;
+  margin: 0 auto; }
+
+.textos {
+  font-weight: 100;
+  font-size: 18px; }
+
+.cards {
+  width: 100%; }
+
+@media (min-width: 720px) {
+  .popUp-buttom {
+    padding: 10px;
+    font-size: 16px; }
+  .textos {
+    font-weight: 100;
+    font-size: 22px; } }
+
+@media (min-width: 1024px) {
+  .popUp-buttom {
+    padding: 15px;
+    font-size: 20px; }
+  .oculto {
+    display: flex;
+    width: 60%;
+    margin: 40px auto 0px; } }
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  gap: 12px;
+  background-color: #326259;
+  color: #ffff; }
+
+h2 {
+  margin: 0; }
+
+.header_navbar {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0%;
+  list-style: none;
+  gap: 12px; }
+  .header_navbar a {
+    color: #ffff;
+    text-decoration: none; }
+
+@media (min-width: 768px) {
+  nav {
+    gap: 20px;
+    justify-content: space-evenly; }
+    nav h2 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px; }
+  .header_navbar {
+    gap: 60px; }
+    .header_navbar a {
+      font-size: 18px; } }
+
+.description__above--line {
+  border-top: 1px solid #000; }
+
+.container__flex--list {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column; }
+
+.subtitle__description {
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 42px;
+  margin-left: 6%; }
+
+.text__description {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  margin-left: 6%;
+  width: 79%;
+  margin-top: -1%; }
+
+.container__list--flex {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px; }
+
+.list__styles--1 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 6%; }
+
+.list__styles--1 li {
+  margin: 0 0 2rem 0; }
+
+.list__styles--2 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 6%; }
+
+.list__styles--2 li {
+  margin: 0 0 2rem 0; }
+
+.container__info__hotel--left, .container__info__hotel--right {
+  text-align: center;
+  width: 100%; }
+
+.image {
+  width: 80%;
+  max-width: 362px;
+  object-fit: cover;
+  margin: 3%; }
+
+.card {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  width: 55%;
+  margin: 0px auto 20px; }
+
+.imgCont {
+  width: 100%;
+  margin: 0px auto 15px auto; }
+
+.imgCont__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px; }
+
+@media (min-width: 720px) {
+  .imgCont {
+    width: 90%; }
+  .card {
+    padding: 10px 0px 0px;
+    width: 45%; }
+  .card__text {
+    width: 90%;
+    margin: 0 auto; } }
+
+@media (min-width: 1024px) {
+  .card {
+    width: 30%; } }
