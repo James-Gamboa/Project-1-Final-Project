@@ -1,7 +1,7 @@
 {
-  "name": "practica-1-hotel",
+  "name": "project-1-final-project",
   "version": "1.0.0",
-  "description": "Practica #1 / Proyecto 1",
+  "description": "MEMBERS",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w sass -o public/css",
@@ -12,19 +12,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/James-Gamboa/Practica-1-Hotel.git"
+    "url": "git+https://github.com/James-Gamboa/Project-1-Final-Project.git"
   },
-  "author": "james",
+  "author": "James",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/James-Gamboa/Practica-1-Hotel/issues"
+    "url": "https://github.com/James-Gamboa/Project-1-Final-Project/issues"
   },
-  "homepage": "https://github.com/James-Gamboa/Practica-1-Hotel#readme",
+  "homepage": "https://github.com/James-Gamboa/Project-1-Final-Project#readme",
   "dependencies": {
     "concurrently": "^7.6.0",
     "live-server": "^1.2.2",
     "livereload": "^0.9.3",
-    "node": "^19.4.0",
-    "node-sass": "^8.0.0"
+    "node-sass": "^8.0.0",
+    "sass": "^1.58.3"
   }
 }
