@@ -1,0 +1,26 @@
+.title_buttons{ //this class just define the h2 in the button component styles
+  margin-bottom: 15px;
+}
+
+.button {
+  width: 127px;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button__fullcolor,
+.button__emptycolor:hover {
+  background-color: $dark-red;
+  border: 3px solid $dark-red;
+  color: $white;
+}
+
+.button__emptycolor,
+.button__fullcolor:hover {
+  background-color: $white;
+  border: 3px solid $dark-red;
+  color: black;
+}

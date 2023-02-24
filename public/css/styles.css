@@ -332,3 +332,26 @@ h2 {
 @media (min-width: 1024px) {
   .card {
     width: 30%; } }
+
+.title_buttons {
+  margin-bottom: 15px; }
+
+.button {
+  width: 127px;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer; }
+
+.button__fullcolor,
+.button__emptycolor:hover {
+  background-color: #8B0000;
+  border: 3px solid #8B0000;
+  color: #ffff; }
+
+.button__emptycolor,
+.button__fullcolor:hover {
+  background-color: #ffff;
+  border: 3px solid #8B0000;
+  color: black; }
