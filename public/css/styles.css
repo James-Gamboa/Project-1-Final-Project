@@ -46,32 +46,39 @@ h1 {
     flex-direction: row;
     margin: 3% 9% 5% 0%; }
   .container__flex--img {
-    width: 50% !important; }
+    width: 50%; }
   .subtitle__description {
-    font-size: 26px !important; }
+    font-size: 26px; }
   .container__list--flex {
-    flex-direction: initial !important;
-    font-size: 22px !important;
-    margin: 0% 0% 3% !important; }
+    flex-direction: initial;
+    font-size: 22px;
+    margin: 0% 0% 3%; }
   .text__description {
-    margin: -1% 0% 4% 6% !important; }
+    margin: -1% 0% 4% 6%; }
   .container__info__hotel--right img {
     float: right; }
   .container__info__hotel--left img {
     float: left; }
-  .container__info__hotel--left, .container__info__hotel--right {
-    margin: 3% 0% 0% 1% !important;
-    width: 72% !important; }
-  .container__info__hotel--left, .container__info__hotel--right p {
-    font-size: 20px; } }
+  .container__info__hotel--left {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center; }
+    .container__info__hotel--left p {
+      width: 50%;
+      font-size: 20px; }
+  .container__info__hotel--right {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .container__info__hotel--right p {
+      width: 50%;
+      font-size: 20px; } }
 
 a {
   text-decoration: none;
   color: #000;
   font-size: 18px; }
-
-p {
-  font-size: 14px; }
 
 .homeTitle {
   text-align: center; }
@@ -313,10 +320,6 @@ header {
 
 .list__styles--2 li {
   margin: 0 0 2rem 0; }
-
-.container__info__hotel--left, .container__info__hotel--right {
-  text-align: center;
-  width: 100%; }
 
 .image {
   width: 80%;
