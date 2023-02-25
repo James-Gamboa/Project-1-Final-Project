@@ -8,12 +8,12 @@
   <title>Components</title>
 </head>
 <body>
-  <h2 class="title_buttons">Buttons</h2>
+  <h2 class="title_components">Buttons</h2>
   <div>
     <button class="button button__fullcolor">sign in</button>
     <button class="button button__emptycolor">sign up</button>
   </div>
-  <h2 class="title_buttons">Log in/ Sign up Pop-up Form</h2>
+  <h2 class="title_components">Log in/ Sign up Pop-up Form</h2>
   <button class="button button__fullcolor" onclick="openFormL()">Log in</button>
   <div class="form-popup" id="form-log-in">
     <button class="form-popup__btn--close" onclick="closeFormL()">X</button>
@@ -47,7 +47,7 @@
       </div>
     </form>
   </div>
-  <h2 class="title_buttons">Card Slider</h2>
+  <h2 class="title_components">Card Slider</h2>
   <div class="slideshow__container">
     <div class="slideshow" style="display: block;">
       <ul class="card__container">
@@ -159,6 +159,46 @@
     <span class="slideshow__dots--pass" onclick="currentSlide(2)"></span> 
     <span class="slideshow__dots--pass" onclick="currentSlide(3)"></span> 
   </div>
+  <h2 class="title_components">Hotel Info</h2>
+  <div class="description__above--line container">
+    <div class="container__flex">
+      <img
+        src="public/img/hotel-hostal-amigos.png"
+        alt=""
+        class="container__flex--img"
+      />
+      <div class="container__flex--list">
+        <h1 class="subtitle__main">Hotel Name</h1>
+        <img src="public/img/stars.png" alt="" />
+        <span class="price__hotel">$1.800 USD</span>
+        <p>
+          Isabel la Catolica 61-A, 06000 Ciudad de México, México, D.F.,
+          México
+        </p>
+        <a href="tel:+52 555 512 3496">+52 555 512 3496</a>
+      </div>
+    </div>
+  </div>
+</main>
+<h2 class="title_components">Hotels Description</h2>
+<div class="description__above--line container">
+  <h4 class="subtitle__description">About the Hotel</h4>
+  <p class="text__description">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+  </p>
+</div>
+<div class="container__list--flex container">
+  <ul class="list__styles--1">
+    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+  </ul>
+  <ul class="list__styles--2">
+    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+  </ul>
+</div>
 </body>
 <script src="./scripts/pop-up.js"></script>
 <script src="./scripts/cards.js"></script>
