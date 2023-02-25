@@ -220,9 +220,6 @@ nav {
   background-color: #326259;
   color: #ffff; }
 
-h2 {
-  margin: 0; }
-
 .header_navbar {
   display: flex;
   align-items: center;
@@ -462,7 +459,7 @@ h2 {
   .card__container {
     margin-left: -4%; } }
 
-.title_buttons {
+.title_components {
   margin: 15px 0; }
 
 .button {
