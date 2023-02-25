@@ -5,14 +5,33 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="public/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Babylonica&family=Cinzel:wght@700&family=Edu+TAS+Beginner:wght@700&family=Lancelot&display=swap"rel="stylesheet">
   <title>Components</title>
 </head>
 <body>
+  <h2 class="title_components">Header</h2>
+  <header>
+    <h1>Leiva´s Hotels</h1>
+        <button id="abrir" class="abrir-menu"><svg viewBox="0 0 24 24" width="24" height="24"><path fill="#000" d="M2 18h20v-2H2v2zM2 13h20v-2H2v2zM2 6v2h20V6H2z"/></svg></button>
+    <nav class="nav" id="nav">
+        <button class="cerrar-menu" id="cerrar"><svg viewBox="0 0 24 24" width="24" height="24"><path fill="#ffff" d="M19 6.4L17.6 5L12 10.6L6.4 5L5 6.4l5.6 5.6L5 17.6l1.4 1.4l5.6-5.6l5.6 5.6l1.4-1.4l-5.6-5.6L19 6.4z"/></svg></button>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Destinies</a></li>
+            <li><button class="button button__fullcolor">sign in</button></li>
+            <li><button class="button button__emptycolor">sign up</button></li>
+        </ul>
+    </nav>
+  </header>
+
   <h2 class="title_components">Buttons</h2>
   <div>
     <button class="button button__fullcolor">sign in</button>
     <button class="button button__emptycolor">sign up</button>
   </div>
+
   <h2 class="title_components">Log in/ Sign up Pop-up Form</h2>
   <button class="button button__fullcolor" onclick="openFormL()">Log in</button>
   <div class="form-popup" id="form-log-in">
@@ -47,6 +66,7 @@
       </div>
     </form>
   </div>
+
   <h2 class="title_components">Card Slider</h2>
   <div class="slideshow__container">
     <div class="slideshow" style="display: block;">
@@ -159,6 +179,7 @@
     <span class="slideshow__dots--pass" onclick="currentSlide(2)"></span> 
     <span class="slideshow__dots--pass" onclick="currentSlide(3)"></span> 
   </div>
+
   <h2 class="title_components">Hotel Info</h2>
   <div class="description__above--line container">
     <div class="container__flex">
@@ -179,7 +200,7 @@
       </div>
     </div>
   </div>
-</main>
+
 <h2 class="title_components">Hotels Description</h2>
 <div class="description__above--line container">
   <h4 class="subtitle__description">About the Hotel</h4>
@@ -199,7 +220,9 @@
     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
   </ul>
 </div>
+
 </body>
 <script src="./scripts/pop-up.js"></script>
 <script src="./scripts/cards.js"></script>
+<script src="./scripts/main.js"></script>
 </html>
