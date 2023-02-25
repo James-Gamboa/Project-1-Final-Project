@@ -2,8 +2,6 @@ body {
   font-family: "Roboto", sans-serif; }
 
 h1 {
-  color: #000;
-  margin: 0;
   font-family: 'Babylonica', cursive;
   font-family: 'Cinzel', serif;
   font-family: 'Edu TAS Beginner', cursive;
@@ -69,7 +67,7 @@ h1 {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #000;
   font-size: 18px; }
 
 p {
@@ -506,7 +504,7 @@ header {
 .button__fullcolor:hover {
   background-color: #ffff;
   border: 3px solid #8B0000;
-  color: black; }
+  color: #000; }
 
 .form-popup {
   display: none;
@@ -522,7 +520,7 @@ header {
 .form-popup__container {
   width: 200px;
   padding: 30px 20px;
-  background-color: white; }
+  background-color: #ffff; }
 
 .form-popup__tittle {
   font-size: 30px;
