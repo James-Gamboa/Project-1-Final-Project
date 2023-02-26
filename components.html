@@ -1,241 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="public/css/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Babylonica&family=Cinzel:wght@700&family=Edu+TAS+Beginner:wght@700&family=Lancelot&display=swap"rel="stylesheet">
-  <title>Components</title>
-</head>
-<body>
-  <!-- HEADER -->
-  <h2 class="title_components">Header</h2>
-  <header>
-    <h1>Leiva´s Hotels</h1>
-        <button id="abrir" class="abrir-menu"><svg viewBox="0 0 24 24" width="24" height="24"><path fill="#000" d="M2 18h20v-2H2v2zM2 13h20v-2H2v2zM2 6v2h20V6H2z"/></svg></button>
-    <nav class="nav" id="nav">
-        <button class="cerrar-menu" id="cerrar"><svg viewBox="0 0 24 24" width="24" height="24"><path fill="#ffff" d="M19 6.4L17.6 5L12 10.6L6.4 5L5 6.4l5.6 5.6L5 17.6l1.4 1.4l5.6-5.6l5.6 5.6l1.4-1.4l-5.6-5.6L19 6.4z"/></svg></button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Babylonica&family=Cinzel:wght@700&family=Edu+TAS+Beginner:wght@700&family=Lancelot&display=swap"
+      rel="stylesheet"
+    />
+    <title>Components</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <h2 class="title_components">Header</h2>
+    <header>
+      <h1>Leiva´s Hotels</h1>
+      <button id="abrir" class="abrir-menu">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <path
+            fill="#000"
+            d="M2 18h20v-2H2v2zM2 13h20v-2H2v2zM2 6v2h20V6H2z"
+          />
+        </svg>
+      </button>
+      <nav class="nav" id="nav">
+        <button class="cerrar-menu" id="cerrar">
+          <svg viewBox="0 0 24 24" width="24" height="24">
+            <path
+              fill="#ffff"
+              d="M19 6.4L17.6 5L12 10.6L6.4 5L5 6.4l5.6 5.6L5 17.6l1.4 1.4l5.6-5.6l5.6 5.6l1.4-1.4l-5.6-5.6L19 6.4z"
+            />
+          </svg>
+        </button>
         <ul class="nav-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Destinies</a></li>
-            <li><button class="button button__fullcolor">sign in</button></li>
-            <li><button class="button button__emptycolor">sign up</button></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Destinies</a></li>
+          <li><button class="button button__fullcolor">sign in</button></li>
+          <li><button class="button button__emptycolor">sign up</button></li>
         </ul>
-    </nav>
-  </header>
-  <!-- BUTTONS -->
-  <h2 class="title_components">Buttons</h2>
-  <div>
-    <button class="button button__fullcolor">sign in</button>
-    <button class="button button__emptycolor">sign up</button>
-  </div>
-  <!-- LOG IN AND SIGN UP -->
-  <h2 class="title_components">Log in/ Sign up Pop-up Form</h2>
-  <button class="button button__fullcolor" onclick="openFormL()">Log in</button>
-  <div class="form-popup" id="form-log-in">
-    <button class="form-popup__btn--close" onclick="closeFormL()">X</button>
-    <form action="" class="form-popup__container">
-      <h2 class="form-popup__tittle">LOG IN</h2>
-      <label class="visually-hidden" for="name">Enter your name</label>
-      <input class="form-popup__input" required type="text" id="name" name="name" placeholder="Name"/>
-      <label class="visually-hidden" for="last-name">Enter your last name</label>
-      <input class="form-popup__input" required type="text" id="last-name" name="last-name" placeholder="Last name"/>
-      <label class="visually-hidden" for="email">Enter your email</label>
-      <input class="form-popup__input" required type="email" id="email" name="email" placeholder="Email"/>
-      <label class="visually-hidden" for="password">Enter your password</label>
-      <input class="form-popup__input form-popup__input--last" type="password" id="password" name="password" placeholder="Password"/>
-      <div class="form-popup__center">
-        <button type="submit" class="button button__fullcolor">Start</button>
+      </nav>
+    </header>
+    <!-- BUTTONS -->
+    <h2 class="title_components">Buttons</h2>
+    <div>
+      <button class="button button__fullcolor">sign in</button>
+      <button class="button button__emptycolor">sign up</button>
+    </div>
+    <!-- LOG IN AND SIGN UP -->
+    <h2 class="title_components">Log in/ Sign up Pop-up Form</h2>
+    <button class="button button__fullcolor" onclick="openFormL()">
+      Log in
+    </button>
+    <div class="form-popup" id="form-log-in">
+      <button class="form-popup__btn--close" onclick="closeFormL()">X</button>
+      <form action="" class="form-popup__container">
+        <h2 class="form-popup__tittle">LOG IN</h2>
+        <label class="visually-hidden" for="name">Enter your name</label>
+        <input
+          class="form-popup__input"
+          required
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Name"
+        />
+        <label class="visually-hidden" for="last-name"
+          >Enter your last name</label
+        >
+        <input
+          class="form-popup__input"
+          required
+          type="text"
+          id="last-name"
+          name="last-name"
+          placeholder="Last name"
+        />
+        <label class="visually-hidden" for="email">Enter your email</label>
+        <input
+          class="form-popup__input"
+          required
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+        />
+        <label class="visually-hidden" for="password"
+          >Enter your password</label
+        >
+        <input
+          class="form-popup__input form-popup__input--last"
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Password"
+        />
+        <div class="form-popup__center">
+          <button type="submit" class="button button__fullcolor">Start</button>
+        </div>
+      </form>
+    </div>
+    <button class="button button__emptycolor" onclick="openFormS()">
+      Sign up
+    </button>
+    <div class="form-popup form-popup__sign-up" id="form-sign-up">
+      <button
+        class="form-popup__btn--close form-popup__btn--close--sign"
+        onclick="closeFormS()"
+      >
+        X
+      </button>
+      <form action="" class="form-popup__container">
+        <h2 class="form-popup__tittle">SIGN UP</h2>
+        <label class="visually-hidden" for="email">Enter your email</label>
+        <input
+          class="form-popup__input"
+          required
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+        />
+        <label class="visually-hidden" for="password"
+          >Enter your password</label
+        >
+        <input
+          class="form-popup__input"
+          required
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Password"
+        />
+        <a class="form-popup__forget form-popup__center" href="#"
+          >Forgot Password</a
+        >
+        <div class="form-popup__center">
+          <button type="submit" class="button button__fullcolor">Start</button>
+        </div>
+      </form>
+    </div>
+    <!-- CARD SLIDER -->
+    <h2 class="title_components">Card Slider</h2>
+    <div class="slideshow__container">
+      <div class="slideshow" style="display: block">
+        <ul class="card__container">
+          <li class="card slideshow__fade slideshow__fade2">
+            <div class="card__wrapper">
+              <img
+                class="card__img"
+                src="https://www.kayak.co.cr/rimg/himg/e7/d7/24/expediav2-38713-3dfcd3-777689.jpg?width=720&height=576&crop=true"
+                alt=""
+              />
+              <div class="card__info">
+                <p class="card__info__name">Destination 1</p>
+                <p class="card__info__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <a
+                class="card__cta"
+                href="./destination/destination1/destination1.html"
+                ><span class="visually-hidden">See Destination</span></a
+              >
+            </div>
+          </li>
+          <li class="card slideshow__fade slideshow__fade2">
+            <div class="card__wrapper">
+              <img
+                class="card__img"
+                src="https://www.kayak.co.cr/rimg/himg/e7/d7/24/expediav2-38713-3dfcd3-777689.jpg?width=720&height=576&crop=true"
+                alt=""
+              />
+              <div class="card__info">
+                <p class="card__info__name">Destination 2</p>
+                <p class="card__info__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <a
+                class="card__cta"
+                href="./destination/destination2/destination2.html"
+                ><span class="visually-hidden">See Destination</span></a
+              >
+            </div>
+          </li>
+          <li class="card slideshow__fade slideshow__fade2">
+            <div class="card__wrapper">
+              <img
+                class="card__img"
+                src="https://www.kayak.co.cr/rimg/himg/e7/d7/24/expediav2-38713-3dfcd3-777689.jpg?width=720&height=576&crop=true"
+                alt=""
+              />
+              <div class="card__info">
+                <p class="card__info__name">Destination 3</p>
+                <p class="card__info__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <a
+                class="card__cta"
+                href="./destination/destination2/destination2.html"
+                ><span class="visually-hidden">See Destination</span></a
+              >
+            </div>
+          </li>
+        </ul>
       </div>
-    </form>
-  </div>
-  <button class="button button__emptycolor" onclick="openFormS()">Sign up</button>
-  <div class="form-popup form-popup__sign-up" id="form-sign-up">
-    <button class="form-popup__btn--close form-popup__btn--close--sign" onclick="closeFormS()">X</button>
-    <form action="" class="form-popup__container">
-      <h2 class="form-popup__tittle">SIGN UP</h2>
-      <label class="visually-hidden" for="email">Enter your email</label>
-      <input class="form-popup__input" required type="email" id="email" name="email" placeholder="Email"/>
-      <label class="visually-hidden" for="password">Enter your password</label>
-      <input class="form-popup__input" required type="password" id="password" name="password" placeholder="Password"/>
-      <a class="form-popup__forget form-popup__center" href="#">Olvidé mi contraseña</a>
-      <div class="form-popup__center">
-        <button type="submit" class="button button__fullcolor">Start</button>
+      <div class="slideshow">
+        <ul class="card__container">
+          <li class="card slideshow__fade slideshow__fade2">
+            <div class="card__wrapper">
+              <img
+                class="card__img"
+                src="https://www.kayak.co.cr/rimg/himg/e7/d7/24/expediav2-38713-3dfcd3-777689.jpg?width=720&height=576&crop=true"
+                alt=""
+              />
+              <div class="card__info">
+                <p class="card__info__name">Destination 4</p>
+                <p class="card__info__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <a
+                class="card__cta"
+                href="./destination/destination1/destination1.html"
+                ><span class="visually-hidden">See Destination</span></a
+              >
+            </div>
+          </li>
+          <li class="card slideshow__fade slideshow__fade2">
+            <div class="card__wrapper">
+              <img
+                class="card__img"
+                src="https://www.kayak.co.cr/rimg/himg/e7/d7/24/expediav2-38713-3dfcd3-777689.jpg?width=720&height=576&crop=true"
+                alt=""
+              />
+              <div class="card__info">
+                <p class="card__info__name">Destination 5</p>
+                <p class="card__info__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <a
+                class="card__cta"
+                href="./destination/destination2/destination2.html"
+                ><span class="visually-hidden">See Destination</span></a
+              >
+            </div>
+          </li>
+          <li class="card slideshow__fade slideshow__fade2">
+            <div class="card__wrapper">
+              <img
+                class="card__img"
+                src="https://www.kayak.co.cr/rimg/himg/e7/d7/24/expediav2-38713-3dfcd3-777689.jpg?width=720&height=576&crop=true"
+                alt=""
+              />
+              <div class="card__info">
+                <p class="card__info__name">Destination 6</p>
+                <p class="card__info__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <a
+                class="card__cta"
+                href="./destination/destination2/destination2.html"
+                ><span class="visually-hidden">See Destination</span></a
+              >
+            </div>
+          </li>
+        </ul>
       </div>
-    </form>
-  </div>
-  <!-- CARD SLIDER -->
-  <h2 class="title_components">Card Slider</h2>
-  <div class="slideshow__container">
-    <div class="slideshow" style="display: block;">
-      <ul class="card__container">
-    <li class="card slideshow__fade slideshow__fade2">
-    <div class="card__wrapper">
-      <img class="card__img" src="https://www.kayak.co.cr/rimg/himg/e7/d7/24/expediav2-38713-3dfcd3-777689.jpg?width=720&height=576&crop=true" alt="">
-      <div class="card__info">
-        <p class="card__info__name">Destination 1</p>
-        <p class="card__info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <div class="slideshow">
+        <ul class="card__container">
+          <li class="card slideshow__fade slideshow__fade2">
+            <div class="card__wrapper">
+              <img
+                class="card__img"
+                src="https://www.kayak.co.cr/rimg/himg/e7/d7/24/expediav2-38713-3dfcd3-777689.jpg?width=720&height=576&crop=true"
+                alt=""
+              />
+              <div class="card__info">
+                <p class="card__info__name">Destination 7</p>
+                <p class="card__info__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <a
+                class="card__cta"
+                href="./destination/destination1/destination1.html"
+                ><span class="visually-hidden">See Destination</span></a
+              >
+            </div>
+          </li>
+          <li class="card slideshow__fade slideshow__fade2">
+            <div class="card__wrapper">
+              <img
+                class="card__img"
+                src="https://www.kayak.co.cr/rimg/himg/e7/d7/24/expediav2-38713-3dfcd3-777689.jpg?width=720&height=576&crop=true"
+                alt=""
+              />
+              <div class="card__info">
+                <p class="card__info__name">Destination 8</p>
+                <p class="card__info__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <a
+                class="card__cta"
+                href="./destination/destination2/destination2.html"
+                ><span class="visually-hidden">See Destination</span></a
+              >
+            </div>
+          </li>
+          <li class="card slideshow__fade slideshow__fade2">
+            <div class="card__wrapper">
+              <img
+                class="card__img"
+                src="https://www.kayak.co.cr/rimg/himg/e7/d7/24/expediav2-38713-3dfcd3-777689.jpg?width=720&height=576&crop=true"
+                alt=""
+              />
+              <div class="card__info">
+                <p class="card__info__name">Destination 9</p>
+                <p class="card__info__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <a
+                class="card__cta"
+                href="./destination/destination2/destination2.html"
+                ><span class="visually-hidden">See Destination</span></a
+              >
+            </div>
+          </li>
+        </ul>
       </div>
-      <a class="card__cta" href="./destination/destination1/destination1.html"><span class="visually-hidden">See Destination</span></a>
+      <a class="slideshow__arrow--previus" onclick="plusSlides(-1)">❮</a>
+      <a class="slideshow__arrow--next" onclick="plusSlides(1)">❯</a>
     </div>
-  </li>
-  <li class="card slideshow__fade slideshow__fade2">
-    <div class="card__wrapper">
-      <img class="card__img" src="https://www.kayak.co.cr/rimg/himg/e7/d7/24/expediav2-38713-3dfcd3-777689.jpg?width=720&height=576&crop=true" alt="">
-      <div class="card__info">
-        <p class="card__info__name">Destination 2</p>
-        <p class="card__info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="slideshow__dots">
+      <span class="slideshow__dots--pass" onclick="currentSlide(1)"></span>
+      <span class="slideshow__dots--pass" onclick="currentSlide(2)"></span>
+      <span class="slideshow__dots--pass" onclick="currentSlide(3)"></span>
+    </div>
+    <!-- HOTEL INFORMATION -->
+    <h2 class="title_components">Hotel Info</h2>
+    <div class="description__above--line container">
+      <div class="container__flex">
+        <img
+          src="public/img/hotel-hostal-amigos.png"
+          alt=""
+          class="container__flex--img"
+        />
+        <div class="container__flex--list">
+          <h1 class="subtitle__main">Hotel Name</h1>
+          <img src="public/img/stars.png" alt="" />
+          <span class="price__hotel">$1.800 USD</span>
+          <p>
+            Isabel la Catolica 61-A, 06000 Ciudad de México, México, D.F.,
+            México
+          </p>
+          <a href="tel:+52 555 512 3496">+52 555 512 3496</a>
+        </div>
       </div>
-      <a class="card__cta" href="./destination/destination2/destination2.html"><span class="visually-hidden">See Destination</span></a>
     </div>
-  </li>
-  <li class="card slideshow__fade slideshow__fade2">
-    <div class="card__wrapper">
-      <img class="card__img" src="https://www.kayak.co.cr/rimg/himg/e7/d7/24/expediav2-38713-3dfcd3-777689.jpg?width=720&height=576&crop=true" alt="">
-      <div class="card__info">
-        <p class="card__info__name">Destination 3</p>
-        <p class="card__info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-      <a class="card__cta" href="./destination/destination2/destination2.html"><span class="visually-hidden">See Destination</span></a>
+    <!-- HOTEL DESCRIPTION -->
+    <h2 class="title_components">Hotels Description</h2>
+    <div class="description__above--line container">
+      <h4 class="subtitle__description">About the Hotel</h4>
+      <p class="text__description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua
+      </p>
     </div>
-  </li>
-</ul>
+    <div class="container__list--flex container">
+      <ul class="list__styles--1">
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+      </ul>
+      <ul class="list__styles--2">
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+      </ul>
     </div>
-    <div class="slideshow">
-      <ul class="card__container">
-  <li class="card slideshow__fade slideshow__fade2">
-    <div class="card__wrapper">
-      <img class="card__img" src="https://www.kayak.co.cr/rimg/himg/e7/d7/24/expediav2-38713-3dfcd3-777689.jpg?width=720&height=576&crop=true" alt="">
-      <div class="card__info">
-        <p class="card__info__name">Destination 4</p>
-        <p class="card__info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-      <a class="card__cta" href="./destination/destination1/destination1.html"><span class="visually-hidden">See Destination</span></a>
-    </div>
-  </li>
-  <li class="card slideshow__fade slideshow__fade2">
-    <div class="card__wrapper">
-      <img class="card__img" src="https://www.kayak.co.cr/rimg/himg/e7/d7/24/expediav2-38713-3dfcd3-777689.jpg?width=720&height=576&crop=true" alt="">
-      <div class="card__info">
-        <p class="card__info__name">Destination 5</p>
-        <p class="card__info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-      <a class="card__cta" href="./destination/destination2/destination2.html"><span class="visually-hidden">See Destination</span></a>
-    </div>
-  </li>
-  <li class="card slideshow__fade slideshow__fade2">
-    <div class="card__wrapper">
-      <img class="card__img" src="https://www.kayak.co.cr/rimg/himg/e7/d7/24/expediav2-38713-3dfcd3-777689.jpg?width=720&height=576&crop=true" alt="">
-      <div class="card__info">
-        <p class="card__info__name">Destination 6</p>
-        <p class="card__info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-      <a class="card__cta" href="./destination/destination2/destination2.html"><span class="visually-hidden">See Destination</span></a>
-    </div>
-  </li>
-</ul>
-    </div>
-    <div class="slideshow">
-      <ul class="card__container">
-  <li class="card slideshow__fade slideshow__fade2">
-    <div class="card__wrapper">
-      <img class="card__img" src="https://www.kayak.co.cr/rimg/himg/e7/d7/24/expediav2-38713-3dfcd3-777689.jpg?width=720&height=576&crop=true" alt="">
-      <div class="card__info">
-        <p class="card__info__name">Destination 7</p>
-        <p class="card__info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-      <a class="card__cta" href="./destination/destination1/destination1.html"><span class="visually-hidden">See Destination</span></a>
-    </div>
-  </li>
-  <li class="card slideshow__fade slideshow__fade2">
-    <div class="card__wrapper">
-      <img class="card__img" src="https://www.kayak.co.cr/rimg/himg/e7/d7/24/expediav2-38713-3dfcd3-777689.jpg?width=720&height=576&crop=true" alt="">
-      <div class="card__info">
-        <p class="card__info__name">Destination 8</p>
-        <p class="card__info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-      <a class="card__cta" href="./destination/destination2/destination2.html"><span class="visually-hidden">See Destination</span></a>
-    </div>
-  </li>
-        <li class="card slideshow__fade slideshow__fade2">
-    <div class="card__wrapper">
-      <img class="card__img" src="https://www.kayak.co.cr/rimg/himg/e7/d7/24/expediav2-38713-3dfcd3-777689.jpg?width=720&height=576&crop=true" alt="">
-      <div class="card__info">
-        <p class="card__info__name">Destination 9</p>
-        <p class="card__info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-      <a class="card__cta" href="./destination/destination2/destination2.html"><span class="visually-hidden">See Destination</span></a>
-    </div>
-  </li>
-</ul>
-    </div>
-    <a class="slideshow__arrow--previus" onclick="plusSlides(-1)">❮</a>
-    <a class="slideshow__arrow--next" onclick="plusSlides(1)">❯</a>
-  </div>
-  <div class="slideshow__dots">
-    <span class="slideshow__dots--pass" onclick="currentSlide(1)"></span> 
-    <span class="slideshow__dots--pass" onclick="currentSlide(2)"></span> 
-    <span class="slideshow__dots--pass" onclick="currentSlide(3)"></span> 
-  </div>
-  <!-- HOTEL INFORMATION -->
-  <h2 class="title_components">Hotel Info</h2>
-  <div class="description__above--line container">
-    <div class="container__flex">
-      <img
-        src="public/img/hotel-hostal-amigos.png"
-        alt=""
-        class="container__flex--img"
-      />
-      <div class="container__flex--list">
-        <h1 class="subtitle__main">Hotel Name</h1>
-        <img src="public/img/stars.png" alt="" />
-        <span class="price__hotel">$1.800 USD</span>
+    <!-- IMAGES-TEXT LEFT AND RIGHT -->
+    <h2 class="title_components">Images with text left and right</h2>
+    <div class="container__info__hotel">
+      <div class="container__info__hotel--right">
+        <img class="image" src="./img/hostal-amigo-bar.png" alt="" />
         <p>
-          Isabel la Catolica 61-A, 06000 Ciudad de México, México, D.F.,
-          México
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
+          quisquam incidunt repellat rerum porro aliquid ea exercitationem
+          tenetur aperiam. Doloribus magni animi laudantium a cumque
+          voluptatibus dolorum esse eos nemo.
         </p>
-        <a href="tel:+52 555 512 3496">+52 555 512 3496</a>
+      </div>
+      <div class="container__info__hotel--left">
+        <img class="image" src="./img/hostal-amigo-bar.png" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
+          quisquam incidunt repellat rerum porro aliquid ea exercitationem
+          tenetur aperiam. Doloribus magni animi laudantium a cumque
+          voluptatibus dolorum esse eos nemo.
+        </p>
       </div>
     </div>
-  </div>
-  <!-- HOTEL DESCRIPTION -->
-<h2 class="title_components">Hotels Description</h2>
-<div class="description__above--line container">
-  <h4 class="subtitle__description">About the Hotel</h4>
-  <p class="text__description">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-  </p>
-</div>
-<div class="container__list--flex container">
-  <ul class="list__styles--1">
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-  </ul>
-  <ul class="list__styles--2">
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-  </ul>
-</div>
-  <!-- IMAGES-TEXT LEFT AND RIGHT -->
-<h2 class="title_components">Images with text left and right</h2>
-<div class= "container__info__hotel">
-  <div class="container__info__hotel--right">
-    <img class="image" src="./img/hostal-amigo-bar.png" alt="">
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti quisquam incidunt repellat rerum porro aliquid ea exercitationem tenetur aperiam. Doloribus magni animi laudantium a cumque voluptatibus dolorum esse eos nemo.</p>
-  </div>
-  <div class="container__info__hotel--left">
-    <img class="image" src="./img/hostal-amigo-bar.png" alt="">
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti quisquam incidunt repellat rerum porro aliquid ea exercitationem tenetur aperiam. Doloribus magni animi laudantium a cumque voluptatibus dolorum esse eos nemo.</p>
-  </div>
-</div>
-
-</body>
-<script src="./scripts/pop-up.js"></script>
-<script src="./scripts/cards.js"></script>
-<script src="./scripts/main.js"></script>
+  </body>
+  <script src="./scripts/pop-up.js"></script>
+  <script src="./scripts/cards.js"></script>
+  <script src="./scripts/main.js"></script>
 </html>

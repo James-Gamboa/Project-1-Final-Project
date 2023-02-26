@@ -7,6 +7,9 @@ h1 {
   font-family: 'Edu TAS Beginner', cursive;
   font-family: 'Lancelot', cursive; }
 
+.description__above--line {
+  border-top: 1px solid #000; }
+
 .container__info__hotel {
   display: flex;
   flex-direction: column;
@@ -24,6 +27,13 @@ h1 {
   align-items: center;
   margin: 5% 0% 5% 0%; }
 
+.container__flex--list {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  font-size: 20px; }
+
 .container__flex--img {
   width: 80%;
   max-width: 968px;
@@ -34,12 +44,44 @@ h1 {
   text-decoration: none;
   color: #000; }
 
+.subtitle__description {
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 42px;
+  margin-left: 6%; }
+
+.text__description {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  margin-left: 6%;
+  width: 79%;
+  margin: -1% 0% 4% 6%; }
+
 .subtitle__main {
   font-size: 26px; }
 
 .price__hotel {
   font-size: 28px;
   margin: 4%; }
+
+.list__styles--1 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 6%; }
+
+.list__styles--1 li {
+  margin: 0 0 2rem 0; }
+
+.list__styles--2 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 6%; }
+
+.list__styles--2 li {
+  margin: 0 0 2rem 0; }
 
 @media (min-width: 800px) {
   .container__flex {
@@ -50,11 +92,12 @@ h1 {
   .subtitle__description {
     font-size: 26px; }
   .container__list--flex {
+    display: flex;
     flex-direction: initial;
     font-size: 22px;
     margin: 0% 0% 3%; }
-  .text__description {
-    margin: -1% 0% 4% 6%; }
+  .container__list--flex {
+    margin: 0% 0% 3%; }
   .container__info__hotel--right img {
     float: right; }
   .container__info__hotel--left img {
@@ -64,16 +107,16 @@ h1 {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center; }
-    .container__info__hotel--left p {
-      width: 50%;
-      font-size: 20px; }
+  .container__info__hotel--left p {
+    width: 50%;
+    font-size: 20px; }
   .container__info__hotel--right {
     display: flex;
     align-items: center;
     justify-content: center; }
-    .container__info__hotel--right p {
-      width: 50%;
-      font-size: 20px; } }
+  .container__info__hotel--right p {
+    width: 50%;
+    font-size: 20px; } }
 
 a {
   text-decoration: none;
@@ -274,58 +317,6 @@ header {
     align-items: end; }
   .nav-list li a {
     color: #ffff; } }
-
-.description__above--line {
-  border-top: 1px solid #000; }
-
-.container__flex--list {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  flex-direction: column; }
-
-.subtitle__description {
-  font-weight: 600;
-  font-size: 23px;
-  line-height: 42px;
-  margin-left: 6%; }
-
-.text__description {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
-  margin-left: 6%;
-  width: 79%;
-  margin-top: -1%; }
-
-.container__list--flex {
-  display: flex;
-  flex-direction: column;
-  font-size: 20px; }
-
-.list__styles--1 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  margin-left: 6%; }
-
-.list__styles--1 li {
-  margin: 0 0 2rem 0; }
-
-.list__styles--2 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  margin-left: 6%; }
-
-.list__styles--2 li {
-  margin: 0 0 2rem 0; }
-
-.image {
-  width: 80%;
-  max-width: 362px;
-  object-fit: cover;
-  margin: 3%; }
 
 .slideshow__container {
   position: relative;
@@ -613,3 +604,9 @@ header {
     font-size: 16px; }
   .form-popup__input--last {
     margin-bottom: 25px; } }
+
+.image {
+  width: 80%;
+  max-width: 362px;
+  object-fit: cover;
+  margin: 3%; }
