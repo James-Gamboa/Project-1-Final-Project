@@ -7,6 +7,9 @@ h1 {
   font-family: 'Edu TAS Beginner', cursive;
   font-family: 'Lancelot', cursive; }
 
+body {
+  margin: 0; }
+
 .description__above--line {
   border-top: 1px solid #000; }
 
@@ -328,7 +331,7 @@ ul {
   background-color: #8B0000;
   color: #ffff;
   margin-top: 50px;
-  padding-top: 55px;
+  padding-top: 50px;
   width: 100%; }
 
 .footer-info {
@@ -342,9 +345,6 @@ ul {
 .footer-info__item__title {
   font-size: 20px;
   font-weight: 700; }
-
-.footer-info__item__list li:hover {
-  opacity: 0.6; }
 
 .footer-info__item__list li a {
   color: #ffff;
@@ -363,7 +363,24 @@ ul {
 .footer-social__list li a {
   color: #ffff; }
 
+.footer-social__list-whatsapp::before {
+  content: url("../../img/icons/message-circle.svg"); }
+
+.footer-social__list-facebook::before {
+  content: url("../../img/icons/facebook.svg"); }
+
+.footer-social__list-instagram::before {
+  content: url("../../img/icons/instagram.svg"); }
+
+.footer-social__list-whatsapp:hover,
+.footer-social__list-facebook:hover,
+.footer-social__list-instagram:hover,
+.footer-info__item__list li:hover {
+  opacity: 0.6; }
+
 @media (min-width: 760px) {
+  .footer {
+    padding-top: 0; }
   .footer-info {
     padding: 50px 0 0 0;
     display: flex;
