@@ -364,13 +364,13 @@ ul {
   color: #ffff; }
 
 .footer-social__list-whatsapp::before {
-  content: url("../../img/icons/message-circle.svg"); }
+  content: url("../../public/img/icons/message-circle.svg"); }
 
 .footer-social__list-facebook::before {
-  content: url("../../img/icons/facebook.svg"); }
+  content: url("../../public/img/icons/facebook.svg"); }
 
 .footer-social__list-instagram::before {
-  content: url("../../img/icons/instagram.svg"); }
+  content: url("../../public/img/icons/instagram.svg"); }
 
 .footer-social__list-whatsapp:hover,
 .footer-social__list-facebook:hover,
