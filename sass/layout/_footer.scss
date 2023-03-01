@@ -10,7 +10,7 @@ ul {
   background-color: $dark-red;
   color: $white;
   margin-top: 50px;
-  padding-top: 55px;
+  padding-top: 50px;
   width: 100%;
 }
 
@@ -27,10 +27,6 @@ ul {
 .footer-info__item__title {
   font-size: 20px;
   font-weight: 700;
-}
-
-.footer-info__item__list li:hover {
-  opacity: 0.6;
 }
 
 .footer-info__item__list li a {
@@ -55,8 +51,32 @@ ul {
   color: $white;
 }
 
+.footer-social__list-whatsapp::before {
+  content: url("../../img/icons/message-circle.svg");
+}
+
+.footer-social__list-facebook::before {
+  content: url("../../img/icons/facebook.svg");
+}
+
+.footer-social__list-instagram::before {
+  content: url("../../img/icons/instagram.svg");
+}
+
+
+.footer-social__list-whatsapp:hover,
+.footer-social__list-facebook:hover,
+.footer-social__list-instagram:hover,
+.footer-info__item__list li:hover {
+  opacity: 0.6;
+}
+
 //MEDIA
 @media (min-width: 760px){
+  .footer {
+    padding-top: 0;
+  }
+
   .footer-info {
   padding: 50px 0 0 0;
   display: flex;
