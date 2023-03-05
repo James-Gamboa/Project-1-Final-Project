@@ -311,13 +311,20 @@ header {
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: #000; }
+    background-color: #000;
+    width: 40%; }
+    .nav .button {
+      border: none;
+      background: none;
+      color: #ffff; }
   .nav.visible {
     opacity: 1;
     visibility: visible; }
   .nav-list {
+    display: flex;
     flex-direction: column;
-    align-items: end; }
+    align-items: center;
+    width: 100%; }
   .nav-list li a {
     color: #ffff; } }
 
