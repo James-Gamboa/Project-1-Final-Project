@@ -1,7 +1,7 @@
 body {
   font-family: "Roboto", sans-serif; }
 
-h1 {
+h1, h2, h4 {
   font-family: 'Babylonica', cursive;
   font-family: 'Cinzel', serif;
   font-family: 'Edu TAS Beginner', cursive;
@@ -150,7 +150,7 @@ a {
 .form-content {
   width: 100%;
   max-width: 100%;
-  border: #326259 2px solid;
+  border: #8B0000 2px solid;
   border-radius: 10px; }
   .form-content h1 {
     margin: 8px 0;
@@ -288,7 +288,7 @@ header {
 .cerrar-menu {
   display: none; }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 620px) {
   .abrir-menu,
   .cerrar-menu {
     display: block;
