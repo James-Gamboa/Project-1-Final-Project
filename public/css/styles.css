@@ -126,8 +126,9 @@ a {
   color: #000;
   font-size: 18px; }
 
-.homeTitle {
-  text-align: center; }
+.title {
+  text-align: center;
+  font-size: 38px; }
 
 .homeImgCont {
   width: 100%; }
@@ -220,17 +221,8 @@ a {
   width: 80%;
   margin: 0 auto; }
 
-.textos {
-  font-weight: 100;
-  font-size: 18px; }
-
 .cards {
   width: 100%; }
-
-@media (min-width: 720px) {
-  .textos {
-    font-weight: 100;
-    font-size: 22px; } }
 
 @media (min-width: 1024px) {
   .oculto {
