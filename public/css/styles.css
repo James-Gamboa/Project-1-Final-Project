@@ -13,10 +13,17 @@ body {
 .description__above--line {
   border-top: 1px solid #000; }
 
-.container__info__hotel {
+.container__info__hotel--right,
+.container__info__hotel--left {
   display: flex;
   flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: center;
   align-items: center; }
+  .container__info__hotel--right p,
+  .container__info__hotel--left p {
+    padding-left: 10px; }
 
 .container__img img {
   width: 426px;
@@ -101,22 +108,13 @@ body {
     margin: 0% 0% 3%; }
   .container__list--flex {
     margin: 0% 0% 3%; }
-  .container__info__hotel--right img {
-    float: right; }
-  .container__info__hotel--left img {
-    float: left; }
-  .container__info__hotel--left {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center; }
-  .container__info__hotel--left p {
-    width: 50%;
-    font-size: 20px; }
   .container__info__hotel--right {
     display: flex;
-    align-items: center;
-    justify-content: center; }
+    flex-direction: row; }
+  .container__info__hotel--left {
+    display: flex;
+    flex-direction: row-reverse; }
+  .container__info__hotel--left p,
   .container__info__hotel--right p {
     width: 50%;
     font-size: 20px; } }
