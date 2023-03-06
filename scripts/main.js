@@ -13,34 +13,19 @@ function formDisplay() {
 
 //hamburger menu
 const nav = document.querySelector("#nav");
+// @ts-ignore
 const open = document.querySelector("#open");
 const cerrar = document.querySelector("#cerrar");
 
+// @ts-ignore
 open.addEventListener("click", () => {
+  // @ts-ignore
   nav.classList.add("visible");
 });
 
+// @ts-ignore
 cerrar.addEventListener("click", () => {
+  // @ts-ignore
   nav.classList.remove("visible");
 });
 
-window.onload = function () {
-  // @ts-ignore
-  document.querySelector("main #texto").style.display = "none";
-  // @ts-ignore
-  document.querySelector("main #cd").style.display = "none";
-  // @ts-ignore
-  document.getElementById("hotel").onclick = function () {
-    // @ts-ignore
-    document.querySelector("main #texto").style.display = "none";
-    // @ts-ignore
-    document.querySelector("main #cd").style.display = "block";
-  };
-  // @ts-ignore
-  document.getElementById("detail").onclick = function () {
-    // @ts-ignore
-    document.querySelector("main #texto").style.display = "block";
-    // @ts-ignore
-    document.querySelector("main #cd").style.display = "none";
-  };
-};

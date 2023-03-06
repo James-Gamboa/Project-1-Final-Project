@@ -24,8 +24,7 @@
       <h1>Leiva´s Hotels</h1>
       <button id="open" class="menu-open">
         <svg viewBox="0 0 24 24" width="24" height="24">
-          <path
-            fill="#000"
+          <path fill="#000"
             d="M2 18h20v-2H2v2zM2 13h20v-2H2v2zM2 6v2h20V6H2z"
           />
         </svg>
@@ -136,97 +135,31 @@
       <div class="homeImgCont">
         <img class="homeImgCont__img" src="public/img/hero-img.png" alt="" />
       </div>
-      <h1 class="homeTitle">Travel Destinies</h1>
-      <section class="main-conteiner">
-        <div class="card">
-          <div class="imgCont">
-            <img class="imgCont__img" src="public/img/cancun-log.jpg" alt="" />
+      <h2 class="title">Travel Destinies</h2>
+        <div class="slideshow__container">
+          <div class="slideshow">
+            <ul class="card__container" id="sliderList">
+       
+            </ul>
           </div>
-          <div class="card__text">
-            <a href="destiny.html">Cancun, Mexico</a>
-            <p>
-              The most famous Mexican tourist destination in the world. Cancun
-              owes its popularity to the beauty of its beaches, fun adventure
-              parks, nearby Mayan archaeological sites and its hotel capacity.
-            </p>
+          <div class="slideshow">
+            <ul class="card__container" id="sliderList2">
+       
+            </ul>
           </div>
+          <div class="slideshow">
+            <ul class="card__container" id="sliderList3">
+     
+            </ul>
+          </div>
+          <a class="slideshow__arrow--previus" onclick="plusSlides(-1)">❮</a>
+          <a class="slideshow__arrow--next" onclick="plusSlides(1)">❯</a>
         </div>
-        <div class="card">
-          <div class="imgCont imgCont--heigth">
-            <img class="imgCont__img" src="public/img/tahiti-log.jpg" alt="" />
-          </div>
-          <div class="card__text">
-            <a href="destny-France.html">Tahiti-France</a>
-            <p>
-              This French island territory in Polynesia is famous for its
-              beautiful beaches ideal for diving, swimming and other sea sports.
-            </p>
-          </div>
+        <div class="slideshow__dots">
+          <span class="slideshow__dots--pass" onclick="currentSlide(1)"></span> 
+          <span class="slideshow__dots--pass" onclick="currentSlide(2)"></span> 
+          <span class="slideshow__dots--pass" onclick="currentSlide(3)"></span> 
         </div>
-
-        <div class="card">
-          <div class="imgCont imgCont--heigth">
-            <img
-              class="imgCont__img"
-              src="public/img/Punta Cana, Dominican Republic.jpg"
-              alt=""
-            />
-          </div>
-          <div class="card__text">
-            <a href="destiny-Dominican.html">Punta Cana, Dominican Republic</a>
-            <p>
-              Punta Cana is so popular that its international airport handles
-              more passengers than Santo Domingo's air terminal.
-            </p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="imgCont imgCont--heigth">
-            <img class="imgCont__img" src="public/img/Rome, Italy.jpg" alt="" />
-          </div>
-          <div class="card__text">
-            <a href="destiny-italy.html">Rome, Italy</a>
-            <p>
-              Rome receives annually more than 7 million foreign tourists who
-              want to see the monuments of the former Roman Empire.
-            </p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="imgCont imgCont--heigth">
-            <img
-              class="imgCont__img"
-              src="public/img/Maui, Hawaii.jpg"
-              alt=""
-            />
-          </div>
-          <div class="card__text">
-            <a href="destiny-hawai.html">Maui, Hawaii, U.S.A.</a>
-            <p>
-              Maui is the second largest island of Hawaii but the most popular
-              among tourists, for its 50 km of paradisiacal beaches, lush
-              jungles and magnificent golf courses
-            </p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="imgCont imgCont--heigth">
-            <img class="imgCont__img" src="public/img/New Zealand.jpg" alt="" />
-          </div>
-          <div class="card__text">
-            <a href="destiny-nzealand.html">New Zealand</a>
-            <p>
-              This oceanic archipelago has grown as a tourist destination for
-              its volcanoes, Edenic beaches and cities with a high standard of
-              living. Auckland is its most populated city with beautiful
-              beaches, jungle coasts and charming bays.
-            </p>
-          </div>
-        </div>
-      </section>
     </main>
     <footer class="footer">
       <div class="footer-info">
@@ -277,7 +210,7 @@
       </div>
     </footer>
   </body>
-  <script src="./scripts/pop-up.js"></script>
-  <script src="./scripts/cards.js"></script>
-  <script src="./scripts/main.js"></script>
+  <script src="scripts/pop-up.js"></script>
+  <script src="scripts/cards.js"></script>
+  <script src="scripts/main.js"></script>
 </html>
