@@ -271,7 +271,7 @@ header {
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
+    bottom: 65%;
     background-color: #000;
     width: 40%; }
     .nav .button {
