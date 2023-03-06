@@ -180,6 +180,10 @@
   .cards__container {
     display: flex;
   }
+  .card,
+  .cards {
+    width: 250px;
+  }
 }
 
 @media (min-width:1024px) {
@@ -190,10 +194,6 @@
 
   .card,
   .cards {
-    width: 250px;
-  }
-
-  .card__container {
-    margin-left: -4%;
+    width: 300px;
   }
 }

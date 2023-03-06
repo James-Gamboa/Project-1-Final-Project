@@ -509,7 +509,10 @@ ul {
 @media (min-width: 768px) {
   .card__container,
   .cards__container {
-    display: flex; } }
+    display: flex; }
+  .card,
+  .cards {
+    width: 250px; } }
 
 @media (min-width: 1024px) {
   .card__container,
@@ -517,9 +520,7 @@ ul {
     margin: auto 0; }
   .card,
   .cards {
-    width: 250px; }
-  .card__container {
-    margin-left: -4%; } }
+    width: 300px; } }
 
 .title_components {
   margin: 15px 0; }
