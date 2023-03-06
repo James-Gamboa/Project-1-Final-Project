@@ -9,27 +9,6 @@
   height: 100%;
 }
 
-.buttomCase{
-  width: 90%;
-  margin: 0 auto 30px;
-  padding: 0% 0% 0% 14%;
-}
-
-.popUp-buttom{
-  padding: 5px;
-  width: 40%;
-  border-radius: 10px;
-  background-color:$lightgray;
-  font-size: 12px;
-  border:$lightgray;
-}
-
-.popUp-buttom:hover{
-  border: $green;
-  background-color: $green;
-  color: $white;
-}
-
 .text {
   width: 80%;
   margin: 0 auto;
@@ -45,11 +24,6 @@
 }
 
 @media (min-width: 720px) {
-  .popUp-buttom{
-    padding: 10px;
-    font-size: 16px;
-  }
-
   .textos {
     font-weight: 100;
     font-size: 22px;
@@ -57,11 +31,6 @@
 }
 
 @media (min-width: 1024px) {
-  .popUp-buttom{
-    padding: 15px;
-    font-size: 20px;
-  }
-
   .oculto{
     display: flex;
     width: 60%;
