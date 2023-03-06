@@ -17,14 +17,14 @@ header {
   color: $black;
 }
 
-.abrir-menu,
-.cerrar-menu {
+.menu-open,
+.menu-close {
   display: none;
 }
 
-@media screen and (max-width: 550px) {
-  .abrir-menu,
-  .cerrar-menu {
+@media (max-width: 620px) {
+  .menu-open,
+  .menu-close {
       display: block;
       border: 0;
       font-size: 20px;
@@ -32,11 +32,11 @@ header {
       cursor: pointer;
   }
 
-  .abrir-menu {
+  .menu-open {
       color: $black;
   }
 
-  .cerrar-menu {
+  .menu-close {
       color: $white;
   }
 
@@ -55,6 +55,7 @@ header {
       width: 40%;
 
       .button{
+        padding: 0;
         border: none;
         background: none;
         color:$white;

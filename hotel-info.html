@@ -11,12 +11,18 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Babylonica&family=Cinzel:wght@700&family=Edu+TAS+Beginner:wght@700&family=Lancelot&display=swap"
+      rel="stylesheet"
+    />
     <title>Hostal Amigo</title>
   </head>
   <body>
     <header>
       <h1>Leiva´s Hotels</h1>
-      <button id="abrir" class="abrir-menu">
+      <button id="open" class="menu-open">
         <svg viewBox="0 0 24 24" width="24" height="24">
           <path
             fill="#000"
@@ -25,7 +31,7 @@
         </svg>
       </button>
       <nav class="nav" id="nav">
-        <button class="cerrar-menu" id="cerrar">
+        <button class="menu-close" id="close">
           <svg viewBox="0 0 24 24" width="24" height="24">
             <path
               fill="#ffff"
@@ -35,11 +41,96 @@
         </button>
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
-          <li><a href="#">Destinies</a></li>
-          <li><button class="button">sign in</button></li>
-          <li><button class="button">sign up</button></li>
+          <li><a href="destiny.html">Destinies</a></li>
+          <li><button class="button" onclick="openFormL()">Log in</button></li>
+          <li><button class="button" onclick="openFormS()">Sign up</button></li>
         </ul>
       </nav>
+      <div class="form-popup" id="form-log-in">
+        <button class="form-popup__btn--close" onclick="closeFormL()">X</button>
+        <form action="" class="form-popup__container">
+          <h2 class="form-popup__tittle">LOG IN</h2>
+          <label class="visually-hidden" for="name">Enter your name</label>
+          <input
+            class="form-popup__input"
+            required
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+          />
+          <label class="visually-hidden" for="last-name"
+            >Enter your last name</label
+          >
+          <input
+            class="form-popup__input"
+            required
+            type="text"
+            id="last-name"
+            name="last-name"
+            placeholder="Last name"
+          />
+          <label class="visually-hidden" for="email">Enter your email</label>
+          <input
+            class="form-popup__input"
+            required
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+          />
+          <label class="visually-hidden" for="password"
+            >Enter your password</label
+          >
+          <input
+            class="form-popup__input form-popup__input--last"
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+          />
+          <div class="form-popup__center">
+            <button type="submit" class="button">Start</button>
+          </div>
+        </form>
+      </div>
+      <div class="form-popup form-popup__sign-up" id="form-sign-up">
+        <button
+          class="form-popup__btn--close form-popup__btn--close--sign"
+          onclick="closeFormS()"
+        >
+          X
+        </button>
+        <form action="" class="form-popup__container">
+          <h2 class="form-popup__tittle">SIGN UP</h2>
+          <label class="visually-hidden" for="email">Enter your email</label>
+          <input
+            class="form-popup__input"
+            required
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+          />
+          <label class="visually-hidden" for="password"
+            >Enter your password</label
+          >
+          <input
+            class="form-popup__input"
+            required
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+          />
+          <a class="form-popup__forget form-popup__center" href="#"
+            >Forgot Password</a
+          >
+          <div class="form-popup__center">
+            <button type="submit" class="button">Start</button>
+          </div>
+        </form>
+      </div>
     </header>
     <main>
       <div class="description__above--line container">
@@ -152,20 +243,28 @@
           </ul>
         </div>
       </div>
-    <!-- SOCIAL MEDIA -->
+      <!-- SOCIAL MEDIA -->
       <div class="footer-social">
         <ul class="footer-social__list">
           <li>
-          <a href="#" class="footer-social__list-whatsapp"><span class="visually-hidden">WhatsApp</span></a>
+            <a href="#" class="footer-social__list-whatsapp"
+              ><span class="visually-hidden">WhatsApp</span></a
+            >
           </li>
           <li>
-          <a href="#" class="footer-social__list-facebook"><span class="visually-hidden">Facebook</span></a>
+            <a href="#" class="footer-social__list-facebook"
+              ><span class="visually-hidden">Facebook</span></a
+            >
           </li>
           <li>
-          <a href="#" class="footer-social__list-instagram"><span class="visually-hidden">Instagram</span></a>
+            <a href="#" class="footer-social__list-instagram"
+              ><span class="visually-hidden">Instagram</span></a
+            >
           </li>
         </ul>
       </div>
     </footer>
   </body>
+  <script src="./scripts/pop-up.js"></script>
+  <script src="./scripts/main.js"></script>
 </html>
