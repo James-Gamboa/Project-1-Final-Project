@@ -2,10 +2,18 @@
   border-top: 1px solid $black;
 }
 
-.container__info__hotel {
+.container__info__hotel--right,
+.container__info__hotel--left {
   display: flex;
   flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: center;
   align-items: center;
+
+  p {
+    padding-left: 10px;
+  }
 }
 
 .container__img img {
@@ -22,7 +30,6 @@
   margin: 5% 0% 5% 0%;
 }
 
-
 .container__flex--list{
   display: flex;
   align-items: center;
@@ -30,7 +37,6 @@
   flex-direction: column;
   font-size: 20px;
 }
-
 
 .container__flex--img {
   width: 80%;
@@ -69,7 +75,6 @@
   margin: 4%;
 }
 
-
 .list__styles--1 {
   list-style: none;
   padding: 0;
@@ -93,58 +98,43 @@
 }
 
 @media (min-width: 800px) {
-.container__flex {
-  flex-direction: row;
-  margin: 3% 9% 5% 0%;
-}
-
-.container__flex--img {
-  width: 50%;
+  .container__flex {
+    flex-direction: row;
+    margin: 3% 9% 5% 0%;
   }
 
-.subtitle__description {
-    font-size: 26px;
+  .container__flex--img {
+    width: 50%;
+    }
+
+  .subtitle__description {
+      font-size: 26px;
+    }
+
+  .container__list--flex {
+    display: flex;
+    flex-direction: initial;
+    font-size: 22px;
+    margin: 0% 0% 3%;
   }
 
-.container__list--flex {
-  display: flex;
-  flex-direction: initial;
-  font-size: 22px;
-  margin: 0% 0% 3%;
-}
+  .container__list--flex {
+    margin: 0% 0% 3%;
+  }
 
-.container__list--flex {
-  margin: 0% 0% 3%;
-}
+  .container__info__hotel--right {
+    display: flex;
+    flex-direction: row;
+  }
 
-.container__info__hotel--right img {
-  float: right;
-}
+  .container__info__hotel--left {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 
-.container__info__hotel--left img {
-  float: left;
-}
-
-.container__info__hotel--left {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: center;
-}
-
-.container__info__hotel--left p {
-  width: 50%;
-  font-size: 20px;
-}
-
-.container__info__hotel--right {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.container__info__hotel--right p {
-  width: 50%;
-  font-size: 20px;
-}
+  .container__info__hotel--left p,
+  .container__info__hotel--right p {
+    width: 50%;
+    font-size: 20px;
+  }
 }
