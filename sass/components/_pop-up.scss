@@ -63,13 +63,35 @@
   margin-bottom: 12px;
 }
 
+.form-popup__components {
+  margin-top: 5px;
+  margin-left: 90px;
+}
+
+.form-popup__component {
+  margin-top: 5px;
+}
+
 @media (min-width: 621px) {
   .form-popup {
     margin-right: -52%;
     margin-top: 390px;
   }
 
-.form-popup__sign-up {
+  .form-popup__sign-up {
     margin-top: 327px;
   }
+
+  .form-popup__components {
+    margin-top: 5px;
+    margin-left: 90px;
+  }
+
+  .form-popup__component {
+    margin-top: 5px;
+
+  .form-popup__sign-up {
+    margin-top: 327px;
+  }
+ }
 }
