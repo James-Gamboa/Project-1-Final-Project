@@ -58,7 +58,7 @@ function showDestination(d) {
           <p class="card__info__name">${d.destination}</p>
           <p class="card__info__description">${d.description}</p>
           </div>
-          <a class="card__cta" href=""><span class="visually-hidden">See Destination</span></a>
+          <a class="card__cta" href="${d.destinyInfo}"><span class="visually-hidden">See Destination</span></a>
           </div>
           </li>
       `;
@@ -77,7 +77,7 @@ function showDestination2(d) {
           <p class="card__info__name">${d.destination}</p>
           <p class="card__info__description">${d.description}</p>
           </div>
-          <a class="card__cta" href=""><span class="visually-hidden">See Destination</span></a>
+          <a class="card__cta" href="${d.destinyInfo}"><span class="visually-hidden">See Destination</span></a>
           </div>
           </li>
       `;
@@ -96,7 +96,7 @@ function showDestination3(d) {
           <p class="card__info__name">${d.destination}</p>
           <p class="card__info__description">${d.description}</p>
           </div>
-          <a class="card__cta" href=""><span class="visually-hidden">See Destination</span></a>
+          <a class="card__cta" href="${d.destinyInfo}"><span class="visually-hidden">See Destination</span></a>
           </div>
           </li>
       `;
