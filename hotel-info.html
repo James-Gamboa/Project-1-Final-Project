@@ -47,31 +47,96 @@
         </ul>
       </nav>
       <div class="form-popup" id="form-log-in">
-        <button class="form-popup__btn--close" onclick="closeFormL()"><svg viewBox="0 0 24 24" width="24" height="24"><path fill="#8B0000" d="M19 6.4L17.6 5L12 10.6L6.4 5L5 6.4l5.6 5.6L5 17.6l1.4 1.4l5.6-5.6l5.6 5.6l1.4-1.4l-5.6-5.6L19 6.4z"/></svg><span class="visually-hidden">Close log-in form</span></button>
+        <button class="form-popup__btn--close" onclick="closeFormL()">
+          <svg viewBox="0 0 24 24" width="24" height="24">
+            <path
+              fill="#8B0000"
+              d="M19 6.4L17.6 5L12 10.6L6.4 5L5 6.4l5.6 5.6L5 17.6l1.4 1.4l5.6-5.6l5.6 5.6l1.4-1.4l-5.6-5.6L19 6.4z"
+            /></svg
+          ><span class="visually-hidden">Close log-in form</span>
+        </button>
         <form action="" class="form-popup__container">
           <h2 class="form-popup__tittle">LOG IN</h2>
           <label class="visually-hidden" for="name">Enter your name</label>
-          <input class="form-popup__input" required type="text" id="name" name="name" placeholder="Name"/>
-          <label class="visually-hidden" for="last-name">Enter your last name</label>
-          <input class="form-popup__input" required type="text" id="last-name" name="last-name" placeholder="Last name"/>
+          <input
+            class="form-popup__input"
+            required
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+          />
+          <label class="visually-hidden" for="last-name"
+            >Enter your last name</label
+          >
+          <input
+            class="form-popup__input"
+            required
+            type="text"
+            id="last-name"
+            name="last-name"
+            placeholder="Last name"
+          />
           <label class="visually-hidden" for="email">Enter your email</label>
-          <input class="form-popup__input" required type="email" id="email" name="email" placeholder="Email"/>
-          <label class="visually-hidden" for="password">Enter your password</label>
-          <input class="form-popup__input form-popup__input--last" type="password" id="password" name="password" placeholder="Password"/>
-          <div class="form-popup__center"><button type="submit" class="button">Start</button>
+          <input
+            class="form-popup__input"
+            required
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+          />
+          <label class="visually-hidden" for="password"
+            >Enter your password</label
+          >
+          <input
+            class="form-popup__input form-popup__input--last"
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+          />
+          <div class="form-popup__center">
+            <button type="submit" class="button">Start</button>
           </div>
         </form>
       </div>
       <div class="form-popup form-popup__sign-up" id="form-sign-up">
-        <button class="form-popup__btn--close" onclick="closeFormS()"><svg viewBox="0 0 24 24" width="24" height="24"><path fill="#8B0000" d="M19 6.4L17.6 5L12 10.6L6.4 5L5 6.4l5.6 5.6L5 17.6l1.4 1.4l5.6-5.6l5.6 5.6l1.4-1.4l-5.6-5.6L19 6.4z"/></svg><span class="visually-hidden">Close sign-up form</span></button>
+        <button class="form-popup__btn--close" onclick="closeFormS()">
+          <svg viewBox="0 0 24 24" width="24" height="24">
+            <path
+              fill="#8B0000"
+              d="M19 6.4L17.6 5L12 10.6L6.4 5L5 6.4l5.6 5.6L5 17.6l1.4 1.4l5.6-5.6l5.6 5.6l1.4-1.4l-5.6-5.6L19 6.4z"
+            /></svg
+          ><span class="visually-hidden">Close sign-up form</span>
+        </button>
         <form action="" class="form-popup__container">
           <h2 class="form-popup__tittle">SIGN UP</h2>
           <label class="visually-hidden" for="email">Enter your email</label>
-          <input class="form-popup__input" required type="email" id="email" name="email" placeholder="Email"/>
-          <label class="visually-hidden" for="password">Enter your password</label>
-          <input class="form-popup__input" required type="password" id="password" name="password" placeholder="Password"/>
-          <a class="form-popup__forget form-popup__center" href="#">Forgot Password</a>
-          <div class="form-popup__center"><button type="submit" class="button">Start</button>
+          <input
+            class="form-popup__input"
+            required
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+          />
+          <label class="visually-hidden" for="password"
+            >Enter your password</label
+          >
+          <input
+            class="form-popup__input"
+            required
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+          />
+          <a class="form-popup__forget form-popup__center" href="#"
+            >Forgot Password</a
+          >
+          <div class="form-popup__center">
+            <button type="submit" class="button">Start</button>
           </div>
         </form>
       </div>
@@ -79,34 +144,33 @@
     <main>
       <div class="description__above--line container">
         <div class="container__flex">
-          <img src="" alt="" class="container__flex--img" />
+          <img
+            src="public/img/hotelImage/mallorca-hotel.png"
+            alt=""
+            class="container__flex--img"
+          />
           <div class="container__flex--list">
-            <h2 class="subtitle__main">Hotel Name</h2>
+            <h2 class="subtitle__main">Helios Mallorca Hotel</h2>
             <img src="public/img/hotelImage/stars.png" alt="" />
-            <span class="price__hotel">$1.800 USD</span>
+            <span class="price__hotel">$600 USD</span>
             <p>
-              Isabel la Catolica 61-A, 06000 Ciudad de México, México, D.F.,
-              México
+              Carrer de la Carabela, 7, Palma de Mallorca, Palma de Mallorca,
+              Mallorca, 7610
             </p>
-            <a href="tel:+52 555 512 3496">+52 555 512 3496</a>
+            <a href="tel:+34 971 26 42 50">+34 971 26 42 50</a>
           </div>
         </div>
       </div>
     </main>
     <div class="description__above--line container">
-      <h4 class="subtitle__description">About Hotel Name</h4>
+      <h4 class="subtitle__description">About Hotel</h4>
       <p class="text__description">
-        If you decide to stay at Hotel Name, you will enjoy a magnificent
-        location in the heart of Mexico City, just a ten-minute walk away from
-        the Zócalo and National Palace. You will have a computer room, a 24-hour
-        reception service and multilingual attention to your disposition If you
-        are organizing a meeting in Mexico City, this hostel puts at your
-        disposal 150 square meters of space for events.
+        4 star hotel in Palma de Mallorca with outdoor pool and indoor poo
       </p>
     </div>
     <div class="container__list--flex container">
       <ul class="list__styles--1">
-        <li>Hostal room</li>
+        <li>Excellent Service for client</li>
         <li>Economic lodging with shared facilities</li>
         <li>Clean and tidy</li>
         <li>This lodge has listed several different cleaning practices</li>
@@ -121,28 +185,36 @@
     <!--COLUMN IMAGES-->
     <div class="container__info__hotel description__above--line">
       <div class="container__info__hotel--right">
-        <img src="" alt="" class="image" />
-        <p>
-          The dormitories are decorated in bright colors and include a fan.
-          Sheets and towels can be rented. Shared bathrooms are bright and
-          modern.
-        </p>
+        <img
+          src="public/img/roomImage/double-room-hm.png"
+          alt=""
+          class="image"
+        />
+        <p>Double room for single use</p>
+        <p>Price $120 / Discount -10%</p>
       </div>
       <div class="container__info__hotel--left">
-        <img src="" alt="" class="image" />
-        <p>Hostel lively bar is an ideal place to meet other guests</p>
+        <img
+          src="public/img/roomImage/family-room-hm.png"
+          alt=""
+          class="image"
+        />
+        <p>Price $300 / Discount -5%</p>
+        <p>Family room, balcony (2 Adults + 2 Children)</p>
       </div>
       <div class="container__info__hotel--right">
-        <img src="" alt="" class="image" />
-        <p>the reception is available 24 hours</p>
+        <img
+          src="public/img/roomImage/premium-room-hm.png"
+          alt=""
+          class="image"
+        />
+        <p>Premium Room</p>
+        <p>Price $400 / Discount -25%</p>
       </div>
       <div class="container__info__hotel--left">
-        <img src="" alt="" class="image" />
-        <p>
-          The multilingual staff at the reception can arrange guided tours of
-          the city and excursions, as well as transportation to the City,
-          airport for a fee.
-        </p>
+        <img src="public/img/roomImage/room-1-hm.png" alt="" class="image" />
+        <p>Price $180 / Discount -5%</p>
+        <p>Room with 1 double bed or 2 singles</p>
       </div>
     </div>
     <footer class="footer">

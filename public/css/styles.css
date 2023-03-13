@@ -96,7 +96,7 @@ body {
 @media (min-width: 800px) {
   .container__flex {
     flex-direction: row;
-    margin: 3% 9% 5% 0%; }
+    margin: 3% 10% 5% 1%; }
   .container__flex--img {
     width: 50%; }
   .subtitle__description {
@@ -271,7 +271,6 @@ header {
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 50%;
     background-color: #000;
     width: 40%; }
     .nav .button {
