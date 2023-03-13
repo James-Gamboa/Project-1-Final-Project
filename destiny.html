@@ -47,87 +47,31 @@
         </ul>
       </nav>
       <div class="form-popup" id="form-log-in">
-        <button class="form-popup__btn--close" onclick="closeFormL()">X</button>
+        <button class="form-popup__btn--close" onclick="closeFormL()"><svg viewBox="0 0 24 24" width="24" height="24"><path fill="#8B0000" d="M19 6.4L17.6 5L12 10.6L6.4 5L5 6.4l5.6 5.6L5 17.6l1.4 1.4l5.6-5.6l5.6 5.6l1.4-1.4l-5.6-5.6L19 6.4z"/></svg><span class="visually-hidden">Close log-in form</span></button>
         <form action="" class="form-popup__container">
           <h2 class="form-popup__tittle">LOG IN</h2>
           <label class="visually-hidden" for="name">Enter your name</label>
-          <input
-            class="form-popup__input"
-            required
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Name"
-          />
-          <label class="visually-hidden" for="last-name"
-            >Enter your last name</label
-          >
-          <input
-            class="form-popup__input"
-            required
-            type="text"
-            id="last-name"
-            name="last-name"
-            placeholder="Last name"
-          />
+          <input class="form-popup__input" required type="text" id="name" name="name" placeholder="Name"/>
+          <label class="visually-hidden" for="last-name">Enter your last name</label>
+          <input class="form-popup__input" required type="text" id="last-name" name="last-name" placeholder="Last name"/>
           <label class="visually-hidden" for="email">Enter your email</label>
-          <input
-            class="form-popup__input"
-            required
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email"
-          />
-          <label class="visually-hidden" for="password"
-            >Enter your password</label
-          >
-          <input
-            class="form-popup__input form-popup__input--last"
-            type="password"
-            id="password"
-            name="password"
-            placeholder="Password"
-          />
-          <div class="form-popup__center">
-            <button type="submit" class="button">Start</button>
+          <input class="form-popup__input" required type="email" id="email" name="email" placeholder="Email"/>
+          <label class="visually-hidden" for="password">Enter your password</label>
+          <input class="form-popup__input form-popup__input--last" type="password" id="password" name="password" placeholder="Password"/>
+          <div class="form-popup__center"><button type="submit" class="button">Start</button>
           </div>
         </form>
       </div>
       <div class="form-popup form-popup__sign-up" id="form-sign-up">
-        <button
-          class="form-popup__btn--close form-popup__btn--close--sign"
-          onclick="closeFormS()"
-        >
-          X
-        </button>
+        <button class="form-popup__btn--close" onclick="closeFormS()"><svg viewBox="0 0 24 24" width="24" height="24"><path fill="#8B0000" d="M19 6.4L17.6 5L12 10.6L6.4 5L5 6.4l5.6 5.6L5 17.6l1.4 1.4l5.6-5.6l5.6 5.6l1.4-1.4l-5.6-5.6L19 6.4z"/></svg><span class="visually-hidden">Close sign-up form</span></button>
         <form action="" class="form-popup__container">
           <h2 class="form-popup__tittle">SIGN UP</h2>
           <label class="visually-hidden" for="email">Enter your email</label>
-          <input
-            class="form-popup__input"
-            required
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email"
-          />
-          <label class="visually-hidden" for="password"
-            >Enter your password</label
-          >
-          <input
-            class="form-popup__input"
-            required
-            type="password"
-            id="password"
-            name="password"
-            placeholder="Password"
-          />
-          <a class="form-popup__forget form-popup__center" href="#"
-            >Forgot Password</a
-          >
-          <div class="form-popup__center">
-            <button type="submit" class="button">Start</button>
+          <input class="form-popup__input" required type="email" id="email" name="email" placeholder="Email"/>
+          <label class="visually-hidden" for="password">Enter your password</label>
+          <input class="form-popup__input" required type="password" id="password" name="password" placeholder="Password"/>
+          <a class="form-popup__forget form-popup__center" href="#">Forgot Password</a>
+          <div class="form-popup__center"><button type="submit" class="button">Start</button>
           </div>
         </form>
       </div>
