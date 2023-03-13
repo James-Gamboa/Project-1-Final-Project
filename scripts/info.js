@@ -1,4 +1,5 @@
 const destiny = document.querySelector("#destiny");
+const hotels = document.querySelector("#hotels");
 const words = document.querySelector("#words");
 const cardcontainer = document.querySelector("#cardcontainer");
 
@@ -7,6 +8,10 @@ fetch("https://63f6833959c944921f7569ab.mockapi.io/Destinations")
   .then((data) => destination1(data[0]));
 
 fetch("https://63f6833959c944921f7569ab.mockapi.io/Hotels")
+  .then((response) => response.json())
+  .then((data) => showHotel(data[0]));
+
+  fetch("https://63f6833959c944921f7569ab.mockapi.io/Hotels")
   .then((response) => response.json())
   .then((data) => hotel1(data[0]));
 
@@ -32,6 +37,18 @@ function destination1(d) {
 }
 
 function hotel1(h) {
+  const div = document.createElement("div");
+  
+    div.innerHTML = `
+      <h2 class="title">${h.hotelName}</h2>
+      <div class="imageCont">
+      <img class="imageCont__img" src="${h.image}" alt=""/>
+      </div>
+    `;
+    hotels.append(div);
+}
+
+function showHotel(h) {
   const div3 = document.createElement("div");
   
     div3.innerHTML = `
@@ -42,7 +59,7 @@ function hotel1(h) {
       <p class="card__info__name">${h.hotelName}</p>
       <p class="card__info__description">${h.description}</p>
       </div>
-      <a class="card__cta" href=""><span class="visually-hidden">See Hotel</span></a>
+      <a class="card__cta" href="${h.HotelPage}"><span class="visually-hidden">See Hotel</span></a>
       </div>
       </li>
     `;
