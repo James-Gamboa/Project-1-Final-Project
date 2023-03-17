@@ -69,11 +69,11 @@ body {
   margin: -1% 0% 4% 6%; }
 
 .subtitle__main {
-  font-size: 26px; }
+  font-size: 29px; }
 
-.price__hotel {
-  font-size: 28px;
-  margin: 4%; }
+.text__address {
+  font-size: 18px;
+  margin: 7% 10%; }
 
 .list__styles--1 {
   list-style: none;
