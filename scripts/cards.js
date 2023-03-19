@@ -1,3 +1,8 @@
+
+const aplicacion = document.querySelector("#sliderList");
+
+const url = 'https://63f6833959c944921f7569ab.mockapi.io/Destinations';
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -28,15 +33,36 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 
-const sliderList = document.querySelector("#sliderList");
+//const sliderList = document.querySelector("#sliderList");
 const sliderList2 = document.querySelector("#sliderList2");
 const sliderList3 = document.querySelector("#sliderList3");
 
-for (let i = 0; i <= 2; i++) {
-  fetch("https://63f6833959c944921f7569ab.mockapi.io/Destinations")
-    .then((response) => response.json())
-    .then((data) => showDestination(data[i]));
-}
+fetch(url)
+.then(res => res.json())
+.then(data => {  
+  data.forEach(element => {
+    const li = document.createElement('li')
+    li.setAttribute('id', element.id)
+    li.classList.add("card");
+    li.classList.add("slideshow__fade");
+    li.innerHTML = `
+      <div class="card__wrapper">
+      <img class="card__img" src="${element.heroImage}" alt="">
+      <div class="card__info">
+      <p class="card__info__name">${element.destination}</p>
+      <p class="card__info__description">${element.description}</p>
+      </div></div>
+      </li>
+      `;
+    li.addEventListener('click', function() {
+      window.location.href = `../destiny.html?id=${element.id}`
+    })
+        
+    aplicacion.appendChild(li)
+  })
+})
+.catch(err => console.log(err))
+
 
 for (let i = 3; i <= 5; i++) {
   fetch("https://63f6833959c944921f7569ab.mockapi.io/Destinations")
@@ -54,7 +80,7 @@ function showDestination(d) {
   const li = document.createElement("li");
   li.classList.add("card");
   li.classList.add("slideshow__fade");
-
+  li.setAttribute("id", d.id)
   li.innerHTML = `
           <div class="card__wrapper">
           <img class="card__img" src="${d.heroImage}" alt="">
@@ -106,3 +132,4 @@ function showDestination3(d) {
       `;
   sliderList3.append(li);
 }
+
