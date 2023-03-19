@@ -1,7 +1,11 @@
 const destiny = document.querySelector("#destiny");
+const details = document.querySelector("#details");
+const button = document.querySelector('#button');
+
 const getUrl = new URLSearchParams(window.location.search);
 id = getUrl.get('id')
 const hotelUrl = 'https://63f6833959c944921f7569ab.mockapi.io/Hotels';
+
 
 fetch(`${url}/${id}`)
 .then(res => res.json())
@@ -23,7 +27,7 @@ fetch(`${url}/${id}`)
   words.appendChild(description)
   
 })
-.catch(err => console.log(err))
+//.catch(err => console.log(err))
 
 
 fetch(`${hotelUrl}/${id}`)
@@ -38,7 +42,8 @@ fetch(`${hotelUrl}/${id}`)
     <div class="card__info">
     <p class="card__info__name">${data.hotelName}</p>
     <p class="card__info__description">${data.description}</p>
-    </div></div>
+    </div>
+    </div>
     </li>
   `;
 
@@ -46,6 +51,29 @@ fetch(`${hotelUrl}/${id}`)
     window.location.href = `../hotel-page.html?id=${data.id}`
   })
 
-  cardcontainer.appendChild(li); 
+  aplicacion.appendChild(li); 
+
 })
-.catch(err => console.log(err)) 
+//.catch(err => console.log(err)) 
+
+//// HOTEL-PAGE ////
+fetch(`${hotelUrl}/${id}`)
+.then(res => res.json())
+.then(data => {
+  const div = document.createElement('div');
+  div.setAttribute('id', data.id)
+  div.innerHTML = `
+  <h2 class="title">${data.hotelName}</h2>
+  <div class="imageCont">
+  <img class="imageCont__img" src="${data.image}" alt=""/>
+  </div>
+  </div>`
+  ;
+
+  details.appendChild(div); 
+
+  button.addEventListener('click', function() {
+    window.location.href = `../hotel-info.html?id=${data.id}`
+  })
+})
+//.catch(err => console.log(err)) 

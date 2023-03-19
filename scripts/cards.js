@@ -1,4 +1,3 @@
-
 const aplicacion = document.querySelector("#sliderList");
 
 const url = 'https://63f6833959c944921f7569ab.mockapi.io/Destinations';
