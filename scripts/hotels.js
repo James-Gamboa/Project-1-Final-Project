@@ -1,12 +1,35 @@
 const destiny = document.querySelector("#destiny");
-const details = document.querySelector("#details");
 const button = document.querySelector('#button');
+const hotel = document.querySelector('#hotels');
 
 const getUrl = new URLSearchParams(window.location.search);
 id = getUrl.get('id')
 const hotelUrl = 'https://63f6833959c944921f7569ab.mockapi.io/Hotels';
 
 
+/// HOTEL-PAGE ////
+fetch(`${hotelUrl}/${id}`)
+.then(res => res.json())
+.then(data => {
+  const div = document.createElement('div');
+  div.setAttribute('id', data.id)
+  div.innerHTML = `
+  <h2 class="title">${data.hotelName}</h2>
+  <div class="imageCont">
+  <img class="imageCont__img" src="${data.image}" alt=""/>
+  </div>
+  </div>`
+  ;
+
+  hotel.appendChild(div); 
+
+  button.addEventListener('click', function() {
+    window.location.href = `../hotel-info.html?id=${data.id}`
+  })
+})
+.catch(err => console.log(err)) 
+
+/// TITLE AND IMAGE DESTINY ///
 fetch(`${url}/${id}`)
 .then(res => res.json())
 .then(data => {
@@ -27,9 +50,9 @@ fetch(`${url}/${id}`)
   words.appendChild(description)
   
 })
-//.catch(err => console.log(err))
+.catch(err => console.log(err))
 
-
+/// HOTEL CARD FROM DESTINY ///
 fetch(`${hotelUrl}/${id}`)
 .then(res => res.json())
 .then(data => {
@@ -51,29 +74,8 @@ fetch(`${hotelUrl}/${id}`)
     window.location.href = `../hotel-page.html?id=${data.id}`
   })
 
-  aplicacion.appendChild(li); 
+  sliderList.appendChild(li); 
 
 })
-//.catch(err => console.log(err)) 
+.catch(err => console.log(err)) 
 
-//// HOTEL-PAGE ////
-fetch(`${hotelUrl}/${id}`)
-.then(res => res.json())
-.then(data => {
-  const div = document.createElement('div');
-  div.setAttribute('id', data.id)
-  div.innerHTML = `
-  <h2 class="title">${data.hotelName}</h2>
-  <div class="imageCont">
-  <img class="imageCont__img" src="${data.image}" alt=""/>
-  </div>
-  </div>`
-  ;
-
-  details.appendChild(div); 
-
-  button.addEventListener('click', function() {
-    window.location.href = `../hotel-info.html?id=${data.id}`
-  })
-})
-//.catch(err => console.log(err)) 
