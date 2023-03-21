@@ -11,7 +11,8 @@ body {
   margin: 0; }
 
 .description__above--line {
-  border-top: 1px solid #000; }
+  border-top: 1px solid #000;
+  margin: 0 auto; }
 
 .container__info__hotel--right,
 .container__info__hotel--left {
@@ -377,7 +378,9 @@ ul {
   color: #8B0000;
   font-weight: bold;
   font-size: 24px;
-  border-radius: 0 3px 3px 0; }
+  border-radius: 0 3px 3px 0;
+  background: none;
+  border: none; }
 
 .slideshow__arrow--next {
   right: 0;

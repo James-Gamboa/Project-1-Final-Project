@@ -1,6 +1,8 @@
 const destiny = document.querySelector("#destiny");
 const button = document.querySelector('#button');
 const hotel = document.querySelector('#hotels');
+const hotelInfo = document.querySelector('#hotelInfo');
+const roomSlider = document.querySelector('#roomSlider');
 
 const getUrl = new URLSearchParams(window.location.search);
 id = getUrl.get('id')
@@ -28,6 +30,48 @@ fetch(`${hotelUrl}/${id}`)
   })
 })
 .catch(err => console.log(err)) 
+
+/// HOTEL-INFO ///
+fetch(`${hotelUrl}/${id}`)
+.then(res => res.json())
+.then(data => {
+  const div = document.createElement('div');
+  div.setAttribute('id', data.id)
+  div.innerHTML = `
+      <div class="container__flex">
+        <img src="${data.image}" alt="" class="container__flex--img" />
+        <div class="container__flex--list">
+          <h2 class="subtitle__main">${data.hotelName}</h2>
+          <img src="public/img/hotelImage/stars.png" alt="" />
+          <p class="text__address">
+            ${data.address}
+          </p>
+          <a href="tel:${data.phoneNunber}"</a>
+        </div>
+      </div>
+    </div>`
+  ;
+
+  hotelInfo.appendChild(div);
+
+  data.roomsList.forEach(element => {
+    const li = document.createElement('li')
+    li.classList.add("card");
+    li.classList.add("slideshow__fade");
+    li.innerHTML = `
+      <div class="card__wrapper">
+      <img class="card__img" src="${element.roomImage}" alt="">
+      <div class="card__info">
+      <p class="card__info__name">${element.roomName}</p>
+      <p class="card__info__description">${element.features}</p>
+      </div></div>
+      </li>
+      `;
+        
+    roomSlider.appendChild(li)
+  })
+})
+.catch(err => console.log(err))
 
 /// TITLE AND IMAGE DESTINY ///
 fetch(`${url}/${id}`)

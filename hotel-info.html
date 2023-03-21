@@ -84,91 +84,13 @@
     </div>
   </header>
   <main>
-    <div class="description__above--line container">
-      <div class="container__flex">
-        <img src="public/img/hotelImage/mallorca-hotel.png" alt="" class="container__flex--img" />
-        <div class="container__flex--list">
-          <h2 class="subtitle__main">Helios Mallorca Hotel</h2>
-          <img src="public/img/hotelImage/stars.png" alt="" />
-          <p class="text__address">
-            Carrer de la Carabela, 7, Palma de Mallorca, Palma de Mallorca,
-            Mallorca, 7610
-          </p>
-          <a href="tel:+34 971 26 42 50">+34 971 26 42 50</a>
-        </div>
-      </div>
+    <div class="description__above--line container" id="hotelInfo"></div>
+    <div class="slideshow__container">
+      <ul class="card__container" id="roomSlider"></ul>
+      <button class="slideshow__arrow--previus" onclick="previous()">❮</button>
+      <button class="slideshow__arrow--next" onclick="next()">❯</button>
     </div>
   </main>
-  <div class="description__above--line container">
-    <h4 class="subtitle__description">About Hotel</h4>
-    <p class="text__description">
-      4 star hotel in Palma de Mallorca with outdoor pool and indoor poo
-    </p>
-  </div>
-  <div class="container__list--flex container">
-    <ul class="list__styles--1">
-      <li>Excellent Service for client</li>
-      <li>Economic lodging with shared facilities</li>
-      <li>Clean and tidy</li>
-      <li>This lodge has listed several different cleaning practices</li>
-    </ul>
-    <ul class="list__styles--2">
-      <li>Free</li>
-      <li>The stay includes this free service: wifi</li>
-      <li>Satellite / Cable TV</li>
-      <li>Daily room service</li>
-    </ul>
-  </div>
-  <!--COLUMN IMAGES-->
-  <div class="container__info__hotel description__above--line">
-    <div class="container__info__hotel--right">
-      <img src="public/img/roomImage/double-room-hm.png" alt="" class="image" />
-      <p>Double room for single use</p>
-      <p>Price $120 / Discount -10%</p>
-    </div>
-    <div class="container__info__hotel--left">
-      <img src="public/img/roomImage/family-room-hm.png" alt="" class="image" />
-      <p>Price $300 / Discount -5%</p>
-      <p>Family room, balcony (2 Adults + 2 Children)</p>
-    </div>
-    <div class="container__info__hotel--right">
-      <img src="public/img/roomImage/premium-room-hm.png" alt="" class="image" />
-      <p>Premium Room</p>
-      <p>Price $400 / Discount -25%</p>
-    </div>
-    <div class="container__info__hotel--left">
-      <img src="public/img/roomImage/room-1-hm.png" alt="" class="image" />
-      <p>Price $180 / Discount -5%</p>
-      <p>Room with 1 double bed or 2 singles</p>
-    </div>
-  </div>
-  <footer class="footer">
-    <div class="footer-info">
-      <div class="footer-info__item">
-        <span class="footer-info__item__title">Company</span>
-        <ul class="footer-info__item__list">
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">About Us</a></li>
-        </ul>
-      </div>
-      <div class="footer-info__item">
-        <span class="footer-info__item__title">Support</span>
-        <ul class="footer-info__item__list">
-          <li><a href="#">Traveler Resources</a></li>
-          <li><a href="#">Discover</a></li>
-          <li><a href="#">Booking</a></li>
-        </ul>
-      </div>
-      <div class="footer-info__item">
-        <span class="footer-info__item__title">Places</span>
-        <ul class="footer-info__item__list">
-          <li><a href="#">All destinations</a></li>
-          <li><a href="#">Car hire</a></li>
-          <li><a href="#">Places of interest</a></li>
-        </ul>
-      </div>
-    </div>
     <!-- SOCIAL MEDIA -->
     <div class="footer-social">
       <ul class="footer-social__list">
@@ -189,5 +111,5 @@
 <script src="scripts/main.js"></script>
 <script src="scripts/menu.js"></script>
 <script src="scripts/hotels.js"></script>
-
+<script src="scripts/cards.js"></script>
 </html>
