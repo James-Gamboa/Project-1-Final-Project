@@ -406,8 +406,10 @@ ul {
   scroll-snap-type: inline mandatory;
   scroll-padding-inline: 20px;
   margin: 0 auto;
-  width: 90%;
-  overflow: hidden; }
+  width: 90%; }
+
+.card__container::-webkit-scrollbar {
+  display: none; }
 
 .card {
   width: 250px;
