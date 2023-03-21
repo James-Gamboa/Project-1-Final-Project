@@ -59,6 +59,7 @@ fetch(`${hotelUrl}/${id}`)
   const li = document.createElement('li')
     li.setAttribute('id', data.id)
     li.classList.add("card");
+    li.classList.add("cards");
     li.innerHTML = `
     <div class="card__wrapper">
     <img class="card__img" src="${data.image}" alt="">

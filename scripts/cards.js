@@ -1,35 +1,27 @@
 const sliderList = document.querySelector("#sliderList");
 const url = 'https://63f6833959c944921f7569ab.mockapi.io/Destinations';
+const buttonRight = document.getElementById('slideRight');
+const buttonLeft = document.getElementById('slideLeft');
+const slideshow = document.querySelectorAll('.slideshow__container')[0];
+let size = 0;
 
-let slideIndex = 1;
-showSlides(slideIndex);
+console.log(slideshow.offsetWidth)
 
-function plusSlides(n) {
-  showSlides((slideIndex += n));
+if (slideshow.offsetWidth > 1024) {
+  size = 700;
+} else if (slideshow.offsetWidth > 680) {
+  size = 600;
+} else {
+  size = 300;
 }
 
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
+function next () {
+  document.getElementById('sliderList').scrollLeft += size;
+};
 
-function showSlides(n) {
-  let slides = document.getElementsByClassName("slideshow");
-  let dots = document.getElementsByClassName("slideshow__dots--pass");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (let i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-}
+function previous () {
+  document.getElementById('sliderList').scrollLeft -= size;
+};
 
 fetch(url)
 .then(res => res.json())
