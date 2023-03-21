@@ -5,10 +5,8 @@ const buttonLeft = document.getElementById('slideLeft');
 const slideshow = document.querySelectorAll('.slideshow__container')[0];
 let size = 0;
 
-console.log(slideshow.offsetWidth)
-
 if (slideshow.offsetWidth > 1024) {
-  size = 700;
+  size = 725;
 } else if (slideshow.offsetWidth > 680) {
   size = 600;
 } else {
