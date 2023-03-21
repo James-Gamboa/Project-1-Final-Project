@@ -406,7 +406,8 @@ ul {
   scroll-snap-type: inline mandatory;
   scroll-padding-inline: 20px;
   margin: 0 auto;
-  width: 90%; }
+  width: 90%;
+  overflow: hidden; }
 
 .card {
   width: 250px;
