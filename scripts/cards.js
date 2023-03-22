@@ -38,10 +38,9 @@ fetch(url)
       </div></div>
       </li>
       `;
-    li.addEventListener('click', function() 
-      window.location.href = `./destiny.html?id=${element.id}`
-    })
-        
+   li.addEventListener('click', function() {
+  window.location.href = `./destiny.html?id=${element.id}`
+  });      
     sliderList.appendChild(li)
   })
 })
