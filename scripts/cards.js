@@ -38,7 +38,7 @@ fetch(url)
       </div></div>
       </li>
       `;
-    li.addEventListener('click', function() {
+    li.addEventListener('click', function() 
       window.location.href = `./destiny.html?id=${element.id}`
     })
         
