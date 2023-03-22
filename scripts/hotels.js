@@ -35,7 +35,7 @@ fetch(`${hotelUrl}/${id}`)
   hotel.appendChild(div); 
 
   button.addEventListener('click', function() {
-    window.location.href = `../hotel-info.html?id=${data.id}`
+    window.location.href = `./hotel-info.html?id=${data.id}`
   })
 })
 .catch(err => console.log(err)) 
@@ -148,7 +148,7 @@ fetch(`${hotelUrl}/${id}`)
   `;
 
   li.addEventListener('click', function() {
-    window.location.href = `../hotel-page.html?id=${data.id}`
+    window.location.href = `./hotel-page.html?id=${data.id}`
   })
 
   sliderList.appendChild(li); 
