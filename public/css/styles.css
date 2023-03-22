@@ -77,37 +77,35 @@ body {
   font-size: 18px;
   margin: 7% 10%; }
 
-.list__styles--1 {
+.list__styles {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-left: 6%; }
+  margin-left: 9%; }
 
-.list__styles--1 li {
+.list__styles li {
   margin: 0 0 2rem 0; }
 
-.list__styles--2 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  margin-left: 6%; }
-
-.list__styles--2 li {
-  margin: 0 0 2rem 0; }
+.card__info__discount {
+  color: #8B0000; }
 
 @media (min-width: 800px) {
   .container__flex {
     flex-direction: row;
-    margin: 3% 10% 5% 1%; }
+    justify-content: space-evenly;
+    margin: 3%; }
   .container__flex--img {
-    width: 50%; }
+    width: 50%;
+    margin: 0 3%; }
   .subtitle__description {
     font-size: 26px; }
   .container__list--flex {
     display: flex;
     flex-direction: initial;
+    justify-content: space-between;
     font-size: 22px;
-    margin: 0% 0% 3%; }
+    margin: 0% 0% 3%;
+    width: 70%; }
   .container__list--flex {
     margin: 0% 0% 3%; }
   .container__info__hotel--right {
@@ -421,7 +419,8 @@ ul {
   box-shadow: 10px 10px #f9f9f9;
   border-radius: 10px;
   position: relative;
-  margin: 25px 25px; }
+  margin: 25px 25px;
+  cursor: pointer; }
 
 .cards {
   margin: 25px auto; }
@@ -502,16 +501,9 @@ ul {
   width: 40%;
   font-size: 14px; }
 
-.button--font-size,
-.button--font-size a {
-  font-size: 14px; }
-
 @media (min-width: 520px) {
   .popUp-button {
     padding: 10px;
-    font-size: 16px; }
-  .button--font-size,
-  .button--font-size a {
     font-size: 16px; }
   .form__buttons {
     width: 20%;
@@ -520,10 +512,7 @@ ul {
 @media (min-width: 1024px) {
   .popUp-button {
     padding: 15px;
-    font-size: 18px; }
-  .button--font-size,
-  .button--font-size a {
-    font-size: 16px; } }
+    font-size: 18px; } }
 
 .form-popup {
   display: none;

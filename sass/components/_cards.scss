@@ -59,7 +59,7 @@
 .card__container::-webkit-scrollbar { 
   display: none; 
 }
- 
+
 .card {
   width: 250px;
   min-height: 200px;
@@ -68,8 +68,9 @@
   border-radius: 10px;
   position: relative;
   margin: 25px 25px;
+  cursor: pointer;
 }
- 
+
 .cards {
   margin: 25px auto;
 }

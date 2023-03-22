@@ -9,6 +9,15 @@ id = getUrl.get('id')
 const hotelUrl = 'https://63f6833959c944921f7569ab.mockapi.io/Hotels';
 
 
+function nextRoom () {
+  document.getElementById('roomSlider').scrollLeft += size;
+};
+
+function previousRoom () {
+  document.getElementById('roomSlider').scrollLeft -= size;
+};
+
+
 /// HOTEL-PAGE ////
 fetch(`${hotelUrl}/${id}`)
 .then(res => res.json())
@@ -46,11 +55,27 @@ fetch(`${hotelUrl}/${id}`)
           <p class="text__address">
             ${data.address}
           </p>
-          <a href="tel:${data.phoneNunber}"</a>
+          <a href="tel:${data.phoneNunber}">${data.phoneNunber}</a>
         </div>
       </div>
-    </div>`
-  ;
+      <div class="description__above--line container">
+        <h4 class="subtitle__description">About ${data.hotelName}</h4>
+        <p class="text__description">${data.description}</p>
+      </div>
+      <div class="container__list--flex container">
+        <ul class="list__styles">
+          <li>${data.featuresHotel[0]}</li>
+          <li>${data.featuresHotel[1]}</li>
+          <li>${data.featuresHotel[2]}</li>
+          <li>${data.featuresHotel[3]}</li>
+        </ul>
+        <ul class="list__styles">
+          <li>${data.featuresHotel[4]}</li>
+          <li>${data.featuresHotel[5]}</li>
+          <li>${data.featuresHotel[6]}</li>
+        </ul>
+      </div>
+    </div>`;
 
   hotelInfo.appendChild(div);
 
@@ -63,10 +88,17 @@ fetch(`${hotelUrl}/${id}`)
       <img class="card__img" src="${element.roomImage}" alt="">
       <div class="card__info">
       <p class="card__info__name">${element.roomName}</p>
-      <p class="card__info__description">${element.features}</p>
+      <p>Features</p>
+      <ul>
+      <li class="card__info__description">${element.features[0]}</li>
+      <li class="card__info__description">${element.features[1]}</li>
+      <li class="card__info__description">${element.features[2]}</li>
+      <li class="card__info__description">${element.features[3]}</li>
+      </ul>
+      <p>${element.price}</p>
+      <p class="card__info__discount">${element.discount || ""}</p>
       </div></div>
-      </li>
-      `;
+      </li>`;
         
     roomSlider.appendChild(li)
   })
