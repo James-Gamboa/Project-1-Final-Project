@@ -95,64 +95,15 @@
     <span class="slideshow__dots--pass" onclick="currentSlide(3)"></span>
   </div>
   <!-- HOTEL INFORMATION -->
-  <h2 class="title_components">Hotel Info</h2>
-  <div class="description__above--line container">
-    <div class="container__flex">
-      <img src="public/img/componentsImage/hotel-components.png" alt="" class="container__flex--img" />
-      <div class="container__flex--list">
-        <h2 class="subtitle__main">Hotel Name</h2>
-        <img src="public/img/hotelImage/stars.png" alt="" />
-        <p>
-          Isabel la Catolica 61-A, 06000 Ciudad de México, México, D.F.,
-          México
-        </p>
-        <a href="tel:+52 555 512 3496">+52 555 512 3496</a>
-      </div>
-    </div>
-  </div>
-  <!-- HOTEL DESCRIPTION -->
-  <h2 class="title_components">Hotels Description</h2>
-  <div class="description__above--line container">
-    <h4 class="subtitle__description">About the Hotel</h4>
-    <p class="text__description">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua
-    </p>
-  </div>
-  <div class="container__list--flex container">
-    <ul class="list__styles--1">
-      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-    </ul>
-    <ul class="list__styles--2">
-      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-    </ul>
-  </div>
-  <!-- IMAGES-TEXT LEFT AND RIGHT -->
   <h2 class="title_components">Information about the hotel rooms</h2>
-  <div class="container__info__hotel">
-    <div class="container__info__hotel--right">
-      <img class="image" src="public/img/componentsImage/image-room-components-1.png" alt="" />
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
-        quisquam incidunt repellat rerum porro aliquid ea exercitationem
-        tenetur aperiam. Doloribus magni animi laudantium a cumque
-        voluptatibus dolorum esse eos nemo.
-      </p>
+    <div class="description__above--line container" id="hotelInfo"></div>
+  <!-- HOTEL Slider Rooms -->
+    <h2 class="title_components">Slider rooms</h2>
+    <div class="slideshow__container">
+      <ul class="card__container" id="roomSlider"></ul>
+      <button class="slideshow__arrow--previus" onclick="previousRoom()">❮</button>
+      <button class="slideshow__arrow--next" onclick="nextRoom()">❯</button>
     </div>
-    <div class="container__info__hotel--left">
-      <img class="image" src="public/img/componentsImage/image-room-components-2.png" alt="" />
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
-        quisquam incidunt repellat rerum porro aliquid ea exercitationem
-        tenetur aperiam. Doloribus magni animi laudantium a cumque
-        voluptatibus dolorum esse eos nemo.
-      </p>
-    </div>
-  </div>
   <!-- Footer -->
   <h2 class="title_components">Footer</h2>
   <footer class="footer">
@@ -198,8 +149,9 @@
     </div>
   </footer>
 </body>
+<script src="scripts/hotels.js"></script>
 <script src="scripts/pop-up.js"></script>
-<script src="scripts/cards.js"></script>
 <script src="scripts/main.js"></script>
 <script src="scripts/menu.js"></script>
+<script src="scripts/cards.js"></script>
 </html>

@@ -3,11 +3,13 @@ const button = document.querySelector('#button');
 const hotel = document.querySelector('#hotels');
 const hotelInfo = document.querySelector('#hotelInfo');
 const roomSlider = document.querySelector('#roomSlider');
-
 const getUrl = new URLSearchParams(window.location.search);
-id = getUrl.get('id')
+let id = getUrl.get('id');
 const hotelUrl = 'https://63f6833959c944921f7569ab.mockapi.io/Hotels';
 
+if (window.location.pathname === "/components.html") {
+  id = 1;
+}
 
 function nextRoom () {
   document.getElementById('roomSlider').scrollLeft += size;
