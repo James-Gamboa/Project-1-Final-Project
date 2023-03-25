@@ -5,8 +5,10 @@ const buttonLeft = document.getElementById('slideLeft');
 const slideshow = document.querySelectorAll('.slideshow__container')[0];
 let size = 0;
 
+// @ts-ignore
 if (slideshow.offsetWidth > 1024) {
   size = 725;
+// @ts-ignore
 } else if (slideshow.offsetWidth > 680) {
   size = 600;
 } else {
@@ -14,10 +16,12 @@ if (slideshow.offsetWidth > 1024) {
 }
 
 function next () {
+  // @ts-ignore
   document.getElementById('sliderList').scrollLeft += size;
 };
 
 function previous () {
+  // @ts-ignore
   document.getElementById('sliderList').scrollLeft -= size;
 };
 
@@ -41,6 +45,7 @@ fetch(url)
   li.addEventListener('click', function() {
   window.location.href = `./destiny.html?id=${element.id}`
   });      
+    // @ts-ignore
     sliderList.appendChild(li)
   })
 })

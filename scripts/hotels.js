@@ -8,14 +8,17 @@ let id = getUrl.get('id');
 const hotelUrl = 'https://63f6833959c944921f7569ab.mockapi.io/Hotels';
 
 if (window.location.pathname === "/components.html") {
+  // @ts-ignore
   id = 1;
 }
 
 function nextRoom () {
+  // @ts-ignore
   document.getElementById('roomSlider').scrollLeft += size;
 };
 
 function previousRoom () {
+  // @ts-ignore
   document.getElementById('roomSlider').scrollLeft -= size;
 };
 
@@ -34,8 +37,10 @@ fetch(`${hotelUrl}/${id}`)
   </div>`
   ;
 
+  // @ts-ignore
   hotel.appendChild(div); 
 
+  // @ts-ignore
   button.addEventListener('click', function() {
     window.location.href = `./hotel-info.html?id=${data.id}`
   })
@@ -79,6 +84,7 @@ fetch(`${hotelUrl}/${id}`)
       </div>
     </div>`;
 
+  // @ts-ignore
   hotelInfo.appendChild(div);
 
   data.roomsList.forEach(element => {
@@ -102,6 +108,7 @@ fetch(`${hotelUrl}/${id}`)
       </div></div>
       </li>`;
         
+    // @ts-ignore
     roomSlider.appendChild(li)
   })
 })
@@ -124,7 +131,9 @@ fetch(`${url}/${id}`)
     ${data.description}
   </p>
 `;
+  // @ts-ignore
   destiny.appendChild(destination)
+  // @ts-ignore
   words.appendChild(description)
   
 })
@@ -153,6 +162,7 @@ fetch(`${hotelUrl}/${id}`)
     window.location.href = `./hotel-page.html?id=${data.id}`
   })
 
+  // @ts-ignore
   sliderList.appendChild(li); 
 
 })

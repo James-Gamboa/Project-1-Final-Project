@@ -1,12 +1,12 @@
-window.addEventListener("load", formDisplay);
+document.addEventListener("DOMContentLoaded", function() {
+  formDisplay();
+});
+
 function formDisplay() {
   var formulario = document.getElementById("form-content");
-  // @ts-ignore
-  if (formulario.style.display === "none") {
-    // @ts-ignore
+  if (formulario && formulario.style.display === "none") {
     formulario.style.display = "block";
-  } else {
-    // @ts-ignore
+  } else if (formulario) {
     formulario.style.display = "none";
   }
 }
