@@ -12,7 +12,7 @@ body {
 
 .description__above--line {
   border-top: 1px solid #000;
-  margin: 0 auto; }
+  margin: 0 auto 40px; }
 
 .container__info__hotel--right,
 .container__info__hotel--left {
@@ -84,7 +84,8 @@ body {
   margin-left: 9%; }
 
 .list__styles li {
-  margin: 0 0 2rem 0; }
+  margin: 0 0 2rem 0;
+  font-size: 18px; }
 
 .card__info__discount {
   color: #8B0000; }
@@ -148,14 +149,15 @@ a {
     margin: 0px auto 0px; } }
 
 .form-content {
-  width: 100%;
-  max-width: 100%;
+  width: 90%;
   border: #8B0000 2px solid;
-  border-radius: 10px; }
+  border-radius: 10px;
+  margin: 0 auto; }
   .form-content h1 {
     margin: 8px 0;
     text-align: center; }
   .form-content p {
+    font-size: 14px;
     margin: 8px 0; }
 
 .form-content__text {
@@ -228,6 +230,19 @@ a {
     display: flex;
     width: 60%;
     margin: 40px auto 0px; } }
+
+.galery {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center; }
+
+@media (min-width: 700px) {
+  .galery {
+    grid-template-columns: auto auto; } }
+
+@media (min-width: 1024px) {
+  .galery {
+    grid-template-columns: auto auto auto; } }
 
 header {
   display: flex;

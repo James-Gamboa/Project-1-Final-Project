@@ -1,6 +1,6 @@
 .description__above--line{
   border-top: 1px solid $black;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 }
 
 .container__info__hotel--right,
@@ -75,6 +75,7 @@
   font-size: 18px;
   margin: 7% 10%;
 }
+
 .list__styles {
   list-style: none;
   padding: 0;
@@ -84,6 +85,7 @@
 
 .list__styles li {
   margin: 0 0 2rem 0;
+  font-size: 18px;
 }
 
 .card__info__discount {

@@ -34,6 +34,7 @@
       </button>
       <ul class="nav-list">
         <li><a href="index.html">Home</a></li>
+        <li><a href="destinies.html">Destinies</a></li>
         <li><button class="button" onclick="openFormL()">Log in</button></li>
         <li><button class="button" onclick="openFormS()">Sign up</button></li>
       </ul>
@@ -79,8 +80,8 @@
   <main>
     <div id="destiny"></div>
     <div class="buttonCase">
-      <button id="hotel" href="#" class="button popUp-button">Hotels</button>
-      <button id="detail" href="#" class="button popUp-button">Detail</button>
+      <button id="hotel" href="#" class="button popUp-button" onclick="hotelDisplay(); closeDetail()">Hotels</button>
+      <button id="detail" href="#" class="button popUp-button"  onclick="detailDisplay(); closeHotel()">Detail</button>
     </div>
     <div class="text" id="text">
       <div class="hidden" id="words"></div>

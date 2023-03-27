@@ -1,13 +1,14 @@
 .form-content {
-  width: 100%;
-  max-width: 100%;
+  width: 90%;
   border: $dark-red 2px solid;
   border-radius:10px ;
+  margin: 0 auto;
   h1 {
     margin:8px 0;
     text-align: center;
   }
   p {
+    font-size: 14px;
     margin:8px 0;
   }
 }
