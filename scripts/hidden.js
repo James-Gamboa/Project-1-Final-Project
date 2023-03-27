@@ -1,38 +1,30 @@
-window.onload = function () {
-  // @ts-ignore
-  document.querySelector("main #cardcontainer").style.display = "none";
-  // @ts-ignore
-  document.querySelector("main #words").style.display = "block";
-  let isHotelHidden = true;
-  // @ts-ignore
-  document.getElementById("hotel").onclick = function () {
-    if (isHotelHidden) {
-      // @ts-ignore
-      document.querySelector("main #cardcontainer").style.display = "block";
-      isHotelHidden = false;
-    } else {
-      // @ts-ignore
-      document.querySelector("main #cardcontainer").style.display = "none";
-      isHotelHidden = true;
-    }
-    // @ts-ignore
-    document.querySelector("main #words").style.display = "none";
-  };
+const cardcontainer = document.getElementById("cardcontainer");
+const words = document.getElementById("words");
 
-  let isDetailHidden = false;
-  // @ts-ignore
-  document.getElementById("detail").onclick = function () {
-    if (!isDetailHidden) {
-      // @ts-ignore
-      document.querySelector("main #words").style.display = "none";
-      isDetailHidden = true;
-    } else {
-      // @ts-ignore
-      document.querySelector("main #words").style.display = "block";
-      isDetailHidden = false;
-    }
-    // @ts-ignore
-    document.querySelector("main #cardcontainer").style.display = "none";
-    isHotelHidden = true;
-  };
-};
+document.addEventListener("DOMContentLoaded", function() {
+  hotelDisplay();
+});
+
+function hotelDisplay() {
+  if (cardcontainer && cardcontainer.style.display === "none") {
+    cardcontainer.style.display = "block";
+  } else if (cardcontainer) {
+    cardcontainer.style.display = "none";
+  }
+}
+
+function detailDisplay() {
+  if (words && words.style.display === "none") {
+    words.style.display = "block";
+  } else if (words) {
+    words.style.display = "none";
+  }
+}
+
+function closeHotel(){
+  cardcontainer.style.display = "none";
+}
+
+function closeDetail(){
+  words.style.display = "none";
+}

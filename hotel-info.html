@@ -34,6 +34,7 @@
       </button>
       <ul class="nav-list">
         <li><a href="index.html">Home</a></li>
+        <li><a href="destinies.html">Destinies</a></li>
         <li><button class="button" onclick="openFormL()">Log in</button></li>
         <li><button class="button" onclick="openFormS()">Sign up</button></li>
       </ul>
@@ -84,11 +85,55 @@
   </header>
   <main>
     <div class="description__above--line container" id="hotelInfo"></div>
-    <div class="slideshow__container">
-      <ul class="card__container" id="roomSlider"></ul>
-      <button class="slideshow__arrow--previus" onclick="previousRoom()">❮</button>
-      <button class="slideshow__arrow--next" onclick="nextRoom()">❯</button>
+    <div class="details-container" id="details">
+      <div class="buttonCase">
+        <button class="button popUp-button" type="button" onclick="formDisplay(); closeDescription()">
+          Form
+        </button>
+        <button id="detail" href="#" class="button popUp-button" onclick="hotelRooms(); closeForm()">Detail</button>
+      </div>
     </div>
+    <div id="hotels">
+      <div id="features"></div>
+      <div class="slideshow__container">
+        <ul class="card__container" id="roomSlider"></ul>
+        <button class="slideshow__arrow--previus" onclick="previousRoom()">❮</button>
+        <button class="slideshow__arrow--next" onclick="nextRoom()">❯</button>
+      </div>
+    </div>
+    <section class="form-content" id="form-content">
+      <div class="form-content__text">
+        <h2>Contact</h2>
+        <p>
+          "Thank you for visiting our contact page. We are available for answer
+          any questions or concerns you may have. Please no feel free to contact
+          us. Thank you very much, we will reply to you as soon as possible!"
+        </p>
+      </div>
+      <form action="https://formsubmit.co/leivahotels.cr@gmail.com" method="POST" class="form">
+        <label for="name">
+          <input class="form__input" type="name" name="name" id="name" placeholder="Name" required />
+        </label>
+        <label for="email">
+          <input class="form__input" type="email" name="email" id="email" placeholder="Email" required />
+        </label>
+        <label for="tel">
+          <input class="form__input" type="tel" name="tel" id="tel" placeholder="Phone" required />
+        </label>
+        <label for="textarea">
+          <input class="form__input form__input--comment" type="textarea" name="comment" id="comment"
+            placeholder="Comment" />
+        </label>
+        <div>
+          <button class="button form__buttons button--font-size" type="submit" name="send" id="send">
+            Send
+          </button>
+          <button class="button form__buttons button--font-size" type="reset" name="reset" id="reset">
+            Reset
+          </button>
+        </div>
+      </form>
+    </section>
   </main>
   <footer class="footer">
     <div class="footer-info">
